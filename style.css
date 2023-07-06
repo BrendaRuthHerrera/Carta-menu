@@ -187,7 +187,7 @@ h1 {
   gap: 10px; /* Espacio entre columnas*/
   margin: 30px 50px 30px 50px;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(255, 0, 0, 0.671);
+  background-color: rgba(119, 50, 50, 0.671);
   margin-bottom: 50px;
   color: white;
 }
@@ -225,8 +225,29 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: fit-content;
   color: white;
+  margin: 0 auto;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.651);
+  border: 5px solid rgba(0, 0, 0, 0.651);
+  border-radius: 5%;
+}
+
+.texto h3 {
+  font-size: 44px;
+  margin: 2px;
+}
+
+.texto p {
+  font-size: 30px;
+}
+.google-map {
+  margin: 10px auto;
+  width: fit-content;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.651);
+  border-radius: 5%;
 }
 
 .google-map iframe {
@@ -235,13 +256,25 @@ h1 {
   max-width: 100%;
   left: 0;
   top: 0;
+  border-radius: 5%;
 }
+
 #historia {
   color: white;
   background: rgba(0, 0, 0, 0.651);
   margin: 90px;
-  padding: 20px;
+  padding: 10px;
+  border: rgba(0, 0, 0, 0.651) solid 5px;
 }
+
+#historia h3 {
+  font-size: 44px;
+  margin: 2px;
+}
+#historia p {
+  font-size: 30px;
+}
+
 #local {
   margin-bottom: 5%;
   margin-left: 10%;
