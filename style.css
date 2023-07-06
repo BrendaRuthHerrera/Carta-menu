@@ -508,6 +508,7 @@ div.pie {
 /*slider*/
 
 #kiko-slider {
+  position: relative;
   margin: auto;
   max-width: 800px;
   width: 100%;
