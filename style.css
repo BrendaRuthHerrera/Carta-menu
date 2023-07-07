@@ -359,7 +359,7 @@ h1 {
 }
 
 .one {
-  background-color: rgb(231, 31, 31);
+  background-color: rgba(231, 31, 31, 0.952);
 }
 
 .two {
