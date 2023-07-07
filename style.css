@@ -537,3 +537,89 @@ div.pie {
   color: white;
   padding: 10px;
 }
+
+/*slider*/
+
+#kiko-slider {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#kiko-slider>ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#kiko-slider>ul.slider {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 300px;
+  top: 20px;
+}
+
+#kiko-slider>ul.slider h1 {
+ 
+  position: absolute;
+  
+  padding: 10px;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, -50%);
+}
+
+#kiko-slider>ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background: #fff;
+}
+
+#kiko-slider>ul.slider li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#kiko-slider>ul.slider li:first-child {
+  opacity: 1;
+  /*Mostramos el primer <li>*/
+}
+
+#kiko-slider>ul.slider li:target { 
+  opacity: 1;
+  /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#kiko-slider>.menuu {
+  text-align: center;
+  margin: 20px;
+}
+
+#kiko-slider>.menuu li {
+  display: inline-block;
+  text-align: center;
+}
+
+#kiko-slider>.menuu li a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px;
+  width: 20px;
+  height: 10px;
+  font-size: 25px;
+  border-radius: 100%;
+  top: 20px;
+}
