@@ -83,6 +83,7 @@ header {
 @media (min-width: 1024px) {
   .nav-bar {
     display: none;
+    position: absolute;
   }
   .menu {
     margin-left: 0;
@@ -223,6 +224,7 @@ h2 {
 .pie-pagina {
   width: 100%;
   background-color: black;
+  position: relative;
 }
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -484,7 +486,7 @@ div.pie {
 /*slider*/
 
 #kiko-slider {
-  position: relative;
+  position: absolute;
   margin: auto;
   max-width: 800px;
   width: 100%;
@@ -500,7 +502,7 @@ li {
 }
 
 #kiko-slider>ul.slider {
-  position: relative;
+  position: absolute;
   max-width: 800px;
   width: 100%;
   height: 300px;
