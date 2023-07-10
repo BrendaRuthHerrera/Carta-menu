@@ -211,75 +211,6 @@ h1 {
 
 /*fin de desayuno y meriendas*/
 
-#ubicacion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-  color: white;
-  background: rgba(0, 0, 0, 0.651);
-}
-
-.texto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  color: white;
-  margin: 0 auto;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.651);
-  border: 5px solid rgba(0, 0, 0, 0.651);
-  border-radius: 5%;
-}
-
-.texto h3 {
-  font-size: 44px;
-  margin: 2px;
-}
-
-.texto p {
-  font-size: 30px;
-}
-.google-map {
-  margin: 10px auto;
-  width: fit-content;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.651);
-  border-radius: 5%;
-}
-
-.google-map iframe {
-  height: 400px;
-  width: 480px;
-  max-width: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 5%;
-}
-
-#historia {
-  color: white;
-  background: rgba(0, 0, 0, 0.651);
-  margin: 90px;
-  padding: 10px;
-  border: rgba(0, 0, 0, 0.651) solid 5px;
-}
-
-#historia h3 {
-  font-size: 44px;
-  margin: 2px;
-}
-#historia p {
-  font-size: 30px;
-}
-
-#local {
-  margin-bottom: 5%;
-  margin-left: 10%;
-}
-
 /*fin de info local */
 
 .pie-pagina {
@@ -515,13 +446,18 @@ h1 {
 }
 
 /*fin de bebidas*/
+/* postres    */
 
 .Galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 10px 20px;
   width: 350px;
   float: left;
 }
 div.Galeria img {
+  grid-auto-rows: 150px;
+  object-fit: cover;
   width: 300px;
   height: 300px;
   border-radius: 20%;
@@ -623,3 +559,29 @@ li {
   border-radius: 100%;
   top: 20px;
 }
+
+
+
+
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
