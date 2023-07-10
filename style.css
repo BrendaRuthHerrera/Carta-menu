@@ -187,7 +187,7 @@ h1 {
   gap: 10px; /* Espacio entre columnas*/
   margin: 30px 50px 30px 50px;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(119, 50, 50, 0.671);
+  background-color: rgba(233, 5, 5, 0.705);
   margin-bottom: 50px;
   color: white;
 }
@@ -351,19 +351,19 @@ h1 {
 /*fin de foter*/
 
 /* Bebidas */
+
 .titulo {
   padding-top: 5%;
   font-size: 2.5rem;
-  color: white;
-  text-shadow: 8px 8px 8px red;
+  color: rgb(255, 0, 0);
+  
 }
-
 .one {
-  background-color: crimson;
+  background-color: rgba(255, 0, 0, 0.719);
 }
 
 .two {
-  background-color: mediumaquamarine;
+  background-color: rgba(0, 0, 0, 0.715);
 }
 
 .bebida {
