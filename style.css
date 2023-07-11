@@ -25,7 +25,7 @@ body {
   color: red;
 }
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
 }
@@ -484,89 +484,84 @@ div.pie {
 
 /*slider*/
 
-#kiko-slider {
-  position: relative;
+.slider {
+  width: 1300px;
+  max-width: 100vw;
+  height: 700px;
   margin: auto;
-  max-width: 800px;
-  width: 100%;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-#kiko-slider>ul,
-li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#kiko-slider>ul.slider {
   position: relative;
-  max-width: 800px;
-  width: 100%;
-  height: 300px;
-  top: 20px;
+  overflow: hidden;
 }
 
-#kiko-slider>ul.slider h1 {
- 
+.list {
   position: absolute;
-  
-  padding: 10px;
-  left: 50%;
-  top: 100px;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
 }
 
-#kiko-slider>ul.slider li {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
-  width: inherit;
-  height: inherit;
-  transition: opacity .5s;
-  background: #fff;
-}
-
-#kiko-slider>ul.slider li img {
-  width: 100%;
-  height: 300px;
+.list img {
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
   object-fit: cover;
 }
 
-#kiko-slider>ul.slider li:first-child {
-  opacity: 1;
-  /*Mostramos el primer <li>*/
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#kiko-slider>ul.slider li:target { 
-  opacity: 1;
-  /*Mostramos el <li> del enlace que pulsemos*/
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: black;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
 }
 
-#kiko-slider>.menuu {
-  text-align: center;
-  margin: 20px;
+.dots {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-#kiko-slider>.menuu li {
-  display: inline-block;
-  text-align: center;
-}
-
-#kiko-slider>.menuu li a {
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-  background-color: #fff;
-  padding: 10px;
-  width: 20px;
+.dots li {
+  list-style: none;
+  width: 10px;
   height: 10px;
-  font-size: 25px;
-  border-radius: 100%;
-  top: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 1s;
 }
+
+.dots li.active {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 400px;
+  }
+}
+
 
 
 
