@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: "Belanosima", sans-serif;
   background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
@@ -222,7 +223,7 @@ h2 {
 
 .pie-pagina {
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -269,7 +270,7 @@ h2 {
   color: brown;
 }
 .pie-pagina .grupo-2 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   padding: 15px 10px;
   text-align: center;
   color: white;
