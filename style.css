@@ -297,8 +297,15 @@ h2 {
   font-size: 50px;
 }
 
+.container1{
+  display:inline-table;
+  margin: 30px 50px 30px 50px;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 .one {
-  background-color: crimson;
+  background-color: red;
 }
 
 .two {
