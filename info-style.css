@@ -46,7 +46,7 @@
     border-radius: 5%;
   }
   
-  #historia {
+  .imp {
     color: white;
     background: rgba(0, 0, 0, 0.651);
     margin: 90px;
@@ -54,15 +54,10 @@
     border: rgba(0, 0, 0, 0.651) solid 5px;
   }
   
-  #historia h3 {
+  .imp h3 {
     font-size: 44px;
     margin: 2px;
   }
-  #historia p {
+  .imp p {
     font-size: 30px;
-  }
-  
-  #local {
-    margin-bottom: 5%;
-    margin-left: 10%;
   }
