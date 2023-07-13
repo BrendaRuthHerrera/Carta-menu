@@ -157,9 +157,9 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: 0.2fr 3fr 0.5fr; /* crea tres columnas cada una de diferente tamaño */
-  gap: 10px; /* Espacio entre columnas*/
-  margin: 30px 50px 30px 50px;
+  grid-template-columns:0.2fr 0.6fr 0.5fr; /* crea tres columnas cada una de diferente tamaño */
+  gap: 0px; /* Espacio entre columnas*/
+  margin: 30px 15% 30px 15%;
   background-color: rgba(0, 0, 0, 0.61);
   color: white;
 }
@@ -167,13 +167,15 @@ h2 {
 .item1,
 .item2,
 .item3 {
-  padding: 10px;
+  padding: 20px;
   /*background-color: blue;*/
 }
 
 .item1 img {
   border-radius: 50px;
   text-align: center;
+  font-size: 30%;
+  
 }
 /*
 .item1{
@@ -181,32 +183,33 @@ h2 {
 }*/
 
 .item2 p {
-  font-size: 20px;
+  font-size: 130%;
 }
 
 .item3 {
-  text-align: right;
+  text-align: center;
+  font-size: 130%;
 }
 
 .container2 {
   display: grid;
-  grid-template-columns: 5fr 1fr; /* crea dos columnas cada una de diferente tamaño */
-  gap: 10px; /* Espacio entre columnas*/
-  margin: 30px 50px 30px 50px;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(119, 50, 50, 0.671);
+  grid-template-columns: 2fr 1fr; /* crea dos columnas cada una de diferente tamaño */
+  gap: 0px; /* Espacio entre columnas*/
+  margin: 30px 250px 30px 250px;
+
+  background-color: rgba(253, 0, 0, 0.671);
   margin-bottom: 50px;
   color: white;
 }
 
 .container2 h2 {
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 20px;
 }
 
 .item1b {
   /* background-color: red;*/
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
 }
 
