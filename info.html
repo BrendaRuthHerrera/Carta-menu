@@ -6,6 +6,7 @@
     <title>RedMoon - Info</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="info-style.css">
+    <link rel="stylesheet" href="slider-style.css">
     <link
       rel="shortcut icon"
       href="https://github.com/BrendaRuthHerrera/Carta_menu/blob/d94405ec5273ad50925a0bc3e0538508e4e04459/img/WhatsApp%20Image%202023-06-28%20at%209.35.12%20AM.jpeg?raw=true"
@@ -53,17 +54,41 @@
           <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sar!4v1687964104458!5m2!1ses-419!2sar!6m8!1m7!1sB93oTvEVKJ6wUujxJ5wY-A!2m2!1d-34.60364584815829!2d-58.38076288232169!3f327.9627332295211!4f1.0277946454774138!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div id="historia">
+      <div class="imp">
         <h3>Historia</h3>
         <p>Red Moon fue fundado en 1963 bajo el nombre de "La Estrella" y rápidamente adquirió popularidad en el barrio
       gracias a su gran y bello espacio, como también a sus ricos platos. Luego, en 1996 se decidió hacer una reforma en la estética del lugar y también se cambió el nombre a "Red Moon".
         </p>
       </div>
   
-      <img id="local" src="https://www.espaciotradem.com.ar/wp-content/uploads/2016/03/ariaudo-DIGGS-6.jpg" alt="Norther Lights" style="width:80%">
       
- 
-      <script src="script.js" ></script>
+      <div class="slider">
+        <div class="list">
+            <div class="image"><img src="imgs-slider/60s restaurant.jpg" alt="60s"></div>
+            <div class="image"><img src="imgs-slider/90s restaurant.jpg" alt="90s"></div>
+            <div class="image"><img src="imgs-slider/new restaurant.jpg" alt="nuevo"></div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots"> <!--1 dot per image-->
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+      </div>
+
+      <div class="imp">
+        <h3>Delivery y Reservas</h3>
+        <p>Tel: 4567 - 7890 </p>
+        <p>Wpp: 11 3344 - 1122</p>
+      </div>
+      
+      <div class="imp">
+        <h3>Horarios</h3>
+        <p>Lunes a sábado de 08 a 02hs. Domingos y feriados de 08 a 23hs</p>
+      </div>
     </main>
     <footer class="pie-pagina">
       <div class="grupo-1">
@@ -95,5 +120,7 @@
         <small>&copy;2023 <b>Grupo 5</b> - Todos Los Derechos Reservados.</small>
       </div>
     </footer>
+    <script src="script.js" ></script>
+    <script src="slider-script.js"></script>
   </body>
 </html>
