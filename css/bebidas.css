@@ -1,0 +1,173 @@
+/* Bebidas */
+.titulo {
+    padding-top: 5%;
+    text-align: center;
+    color: red;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    font-size: 50px;
+  }
+  
+  .container1{
+    display:inline-table;
+    margin: 30px 50px 30px 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .one {
+    background-color: red;
+  }
+  
+  .two {
+    background-color: rgb(36, 43, 40);
+  }
+  
+  .bebida {
+    width: 55%;
+    height: 110%;
+    border-radius: 15%;
+    max-width: 100%;
+    padding-bottom: 5%;
+  }
+  
+  .img2 {
+    float: right;
+    margin-left: 3%;
+  }
+  
+  .parrafo > p {
+    margin-top: 2%;
+    color: aliceblue;
+    font-size: 110%;
+  }
+  
+  .parrafo1 {
+    float: right;
+    margin-right: 2%;
+  }
+  
+  .parrafo2 {
+    float: left;
+    margin-left: 2%;
+  }
+  
+  .cajaGrande {
+    border-radius: 5%;
+    float: left;
+    width: 21%;
+    height: 28%;
+    padding: 2%;
+    overflow: hidden;
+    margin: 2%;
+    box-shadow: 10px 10px 10px whitesmoke;
+    transition: transform 0.3s;
+  }
+  
+  .cajaGrande:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px red;
+  }
+  
+  @media (max-width: 1199px) {
+    .cajaGrande {
+      border-radius: 5%;
+      float: left;
+      width: 29%;
+      height: 32%;
+      overflow: hidden;
+      margin: 1%;
+      box-shadow: 10px 10px 10px whitesmoke;
+      transition: transform 0.3s;
+    }
+  
+    .cajaGrande:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 10px red;
+    }
+  
+    .bebida {
+      width: 40%;
+      height: 95%;
+      border-radius: 15%;
+      max-width: 100%;
+    }
+  
+    .img2 {
+      float: right;
+      margin-left: 1%;
+    }
+  
+    .parrafo {
+      font-size: 120%;
+    }
+  }
+  
+  @media (max-width: 999px) {
+    .cajaGrande {
+      border-radius: 5%;
+      float: left;
+      width: 36%;
+      height: 45%;
+      overflow: hidden;
+      margin: 3%;
+      box-shadow: 10px 10px 10px whitesmoke;
+      transition: transform 0.3s;
+      padding: 1.5%;
+    }
+  
+    .cajaGrande:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 10px red;
+    }
+  
+    .bebida {
+      width: 50%;
+      height: 95%;
+      border-radius: 15%;
+      max-width: 100%;
+    }
+  
+    .img2 {
+      float: right;
+      margin-left: 1%;
+    }
+  
+    .parrafo {
+      font-size: 130%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .cajaGrande {
+      border-radius: 5%;
+      width: 42%;
+      height: 20%;
+      overflow: hidden;
+      margin: 3%;
+      box-shadow: 10px 10px 10px whitesmoke;
+      transition: transform 0.3s;
+    }
+  
+    .cajaGrande:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 10px red;
+    }
+  
+    .bebida {
+      width: 55%;
+      height: 95%;
+      border-radius: 15%;
+      max-width: 100%;
+    }
+  
+    .img2 {
+      float: right;
+      margin-left: 1%;
+    }
+  
+    .parrafo {
+      font-size: 80%;
+    }
+  }
+  
+  /*fin de bebidas*/
