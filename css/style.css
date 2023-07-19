@@ -39,7 +39,6 @@ h2 {
 
 
 
-<<<<<<< HEAD
 /* Bebidas */
 .titulo {
   padding-top: 5%;
@@ -265,14 +264,16 @@ border-radius: 10px;
 }
 
 @media (min-width:768px) {
-.gallery-container {
-  grid-template-columns: repeat(3, 1fr );
-=======
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr );
+  }
+}
+
+
 /*fin de info local */
 
 
 
->>>>>>> 7d412ab4c8f2bbb6519c612489d84e38ab633489
 
 
 
