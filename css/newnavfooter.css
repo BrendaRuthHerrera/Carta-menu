@@ -1,0 +1,207 @@
+/* inicio navbar */
+
+/* aclaración: puede que no funcione sin la parte inicial de info-style.css, por lo cual la indiqué en ese mismo archivo */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0 , 0.1); */
+    background-color: #22120e;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10; 
+}
+
+
+#logo img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-items li {
+    position: relative;
+    float: left;
+}
+
+.nav-items li a {
+    font-family: 'Attena';
+    font-size: 2rem;
+    padding: 2rem;
+    color: #e0d0c1;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-items li a:hover {
+    color: #842001;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 28rem;
+    background-color: #22120e;
+}
+
+.submenu-item {
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.submenu-item a {
+    font-family: 'Attena';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #e0d0c1;
+}
+
+.submenu-item a:hover {
+    color: #842001;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-submenu:first-child {
+    pointer-events: none;        
+}
+
+#btn-submenu:hover > .submenu {
+    display: initial;  
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+header label i {
+    color: #e0d0c1;
+}
+
+@media (max-width: 990px) {
+    header {
+        padding: 20px;
+        border-bottom: 1px solid rgb(224, 208, 193);
+    }
+
+    header label {
+        display: initial;
+        font-size: 3rem;
+
+    }
+    
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #22120e;
+        display: none;
+
+    }
+
+    .nav-items li {
+        width: 100%;
+        border-bottom: 0.5px solid rgb(224, 208, 193);
+        
+    }
+
+    .submenu {
+        position: relative;
+        width: 100%;
+    }
+
+    .submenu-item {
+        background-color: #22120e;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    .disabled {
+        pointer-events: none;
+    }
+
+
+}
+
+/* fin navbar */
+
+/* inicio footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    background-color: #22120e;
+    padding: 40px 0;
+}
+
+h4 {
+    font-family: 'Attena', sans-serif;
+    font-size: 2rem;
+    color: #e0d0c1;
+}
+
+p {
+    font-family: 'Pragmatica Extralight', serif;
+    font-size: 1rem;
+    color: #e0d0c1;
+}
+
+.github {
+    display: flex;
+    grid-column: span 2;
+    justify-content: center;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.slogan p {
+    padding-left: 10px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes a {
+    display: inline-flex;
+}
+
+.github i {
+    font-size: 2rem;
+    padding: 0 0.8rem;
+}
+
+.github a {
+    font-family: 'Attena', sans-serif;
+    font-size: 2rem;
+    color: #e0d0c1;
+    text-decoration: none;
+}
