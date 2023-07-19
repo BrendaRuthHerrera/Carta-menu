@@ -1,0 +1,31 @@
+.comida > table {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  .comida {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pizza {
+    border-radius: 50%;
+    max-width: 40%;
+    font-size: 30px;
+  }
+  .emp {
+    border-radius: 50%;
+    max-width: 40%;
+    font-size: 30px;
+  }
+  #n {
+    color: red;
+    font-size: 30px;
+    text-shadow: rgba(255, 255, 255, 0.507) 1px 2px 3px;
+    margin-left: 10px;
+  }
+  /*fin de comidas*/
