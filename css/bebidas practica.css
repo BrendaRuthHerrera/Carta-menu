@@ -1,0 +1,56 @@
+/*cambiado diseño de bebidas*/
+body{
+background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5) ;
+}
+
+.titulo {
+    padding-top: 5%;
+    text-align: center;
+    color: red;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    font-size: 50px;
+  }
+  
+  .container1{
+    display:flex;
+    flex-direction: column;
+    margin: 30px 50px 30px 50px;
+  }
+
+  /*productos*/
+ .container-product{
+    display: grid;
+    grid-template-columns:auto;
+    border-radius: 5%;
+    float: center;
+    width: 21%;
+    height: 28%;
+    padding: 2%;
+  
+}
+  
+.card-product{
+    background-color: beige;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.1);
+    color: black;
+    text-align: center;
+}
+
+.container-img{
+    position: relative;
+}
+
+.container-img img{
+    width: 50%;
+}
+
+.container-product .price{
+    justify-self: end;
+    align-self: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(59, 45, 41);
+}
