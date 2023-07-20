@@ -21,222 +21,124 @@
   </head>
   <body>
 
-    <!-- <header> 
-    
-    <span class="nav-bar" id="btnmenu">RedMoon <i class="fa-solid fa-bars"></i></i> </span>
-    <nav class="main-nav">
+    <header>
+      <div id="logo">
+        <img src="../imgs/since 1963.png" alt="logo">
+      </div>
       
-      <ul class="menu" id="menu">
-        <img id="logo" src="../imgs/since 1963.png" alt="logo">
-        <li class="menu__item"><a href="../index.html" class="menu__link">inicio</a></li>
-        <li class="menu__item container-submenu">
-          <a href="#" class="menu__link submenu-btn">Menu</a>
-          <ul class="submenu">
-            <li class="menu__item"><a href="comidas.html" class="menu__link">Comidas</a></li>
-            <li class="menu__item"><a href="postres.html" class="menu__link">Postres</a></li>
-            <li class="menu__item"><a href="bebidas.html" class="menu__link">Bebidas</a></li>
-            <li class="menu__item"><a href="desayuno.html" class="menu__link">Desayuno/
-              Merienda</a></li> 
-          </ul>
-        </li>
-           
-        <li class="menu__item"><a href="info.html" class="menu__link">Info</a></li>
-      </ul>
-    </nav>
-  </header>  -->
-  <header>
-    <div id="logo">
-      <img src="../imgs/since 1963.png" alt="logo">
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li><a href="../index.html">Inicio</a></li>
+          <li id="btn-submenu">
+            <a href="" class="disabled">Menu</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="desayuno.html">Desayunos/Meriendas</a></li>
+              <li class="submenu-item"><a href="comidas.html">Comidas</a></li>
+              <li class="submenu-item"><a href="bebidas.html">Bebidas</a></li>
+              <li class="submenu-item"><a href="postres.html">Postres</a></li>
+            </ul>
+          </li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="login y registro.html">Login</a></li>
+        </ul>
+        <div class="hamburguer-menu"></div>
+      </nav>
+    </header>
+ <br>
+ <br>
+ <br>
+  
+ <h2>Pizza</h2>
+ <div class="conteinercomida">
+   <div class="comida1">
+    <img class="muzza" src="../imgs/muzza2.png"
+    width="40%">  
+    <p>Muzarella</p>
+    <p>$3000</p>
+    <button>al carrito</button>
+   </div>  
+
+   <div class="comida1">
+    <img class="muzza" src="../imgs/jamon.png"
+    width="40%">  
+    <p>Jamon y Morron</p>
+    <p>$3000</p>
+    <button>al carrito</button>
+   </div>  
+
+   <div class="comida1">
+    <div class="comida2">
+      <img class="muzza" src="../imgs/fugazzeta.png"
+      width="40%">  
+      <p>Fugazzeta con palmitos</p>
+      <p>$3000</p>
+      <button>al carrito</button>
     </div>
-    
-    <input type="checkbox" id="menu-bar">
-    <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+   </div>  
 
-    <nav class="navbar">
-      <ul class="nav-items">
-        <li><a href="../index.html">Inicio</a></li>
-        <li id="btn-submenu">
-          <a href="" class="disabled">Menu</a>
-          <ul class="submenu">
-            <li class="submenu-item"><a href="desayuno.html">Desayunos/Meriendas</a></li>
-            <li class="submenu-item"><a href="comidas.html">Comidas</a></li>
-            <li class="submenu-item"><a href="bebidas.html">Bebidas</a></li>
-            <li class="submenu-item"><a href="postres.html">Postres</a></li>
-          </ul>
-        </li>
-        <li><a href="info.html">Info</a></li>
-        <li><a href="login y registro.html">Login</a></li>
-      </ul>
-      <div class="hamburguer-menu"></div>
-    </nav>
-  </header>
-  <h1>Comidas</h1>
- 
- 
-  <div class="comida">
-    <img class="pizza" src="https://media.istockphoto.com/id/938742222/es/foto/pizza-de-pepperoni-cheesy.jpg?s=612x612&w=0&k=20&c=GUwbHCrMdnpHGmTzHVPk2U9flWi3WgMVdfdOeBMU00E=" alt=""
-    
-    width="40%">   
-    <table class="tabe">
-      
-      <th id="n">Pizza</th>
-     <tr>
-      
-      <td>Muzarella</td>
-      <td>$3000</td>
-      </tr>
-      <tr>
-       <td>Jamon y Morron</td>
-       <td>$5000</td>
-      </tr> 
-      <tr>
-        <td>Fugazeta</td>
-        <td>$3500</td>
-      </tr>
-      <tr>
-          <td> Hawaiana</td>
-          <td>$5000</td>
-      </tr>
-      <tr>
-        <td>Napolitana</td>
-        <td>$3700</td>
-      </tr>
-      <tr>
-        <td> con champiñones</td>
-        <td>$4500</td>
-      </tr>
-      <tr>
-        <td>Napolitana</td>
-        <td>$4000</td>
-      </tr>
-      
-  
-      <tr>
-        <td>Cuatro estaciones</td>
-        <td>$4000</td>
-      </tr>
-   </table>
-   
- </div>
- <br>
- <br>
- <br>
- <br>
- 
-<div class="comida">
-  
-   <table class="tabe" id="empa">
-  
-      <th id="n">Empanadas</th>
-     <tr>
-      
-      <td>Jamon y Queso</td>
-      
-      <td>12u $4500</td>
-     </tr>
-     <tr>
-       <td>De carne</td>
-       <td>12u $4000</td>
-     </tr> 
-     <tr>
-        <td>De Pollo</td>
-        <td>12u $3500</td>
-     </tr>
-     <tr>
-          <td> Humita</td>
-          <td>12u $3100</td>
-     </tr>
-    
-        <td>pollo picante</td>
-        <td>12u $3500</td>
-    </tr>
-   
-   </table>
-  <img class="emp" src="https://www.paulinacocina.net/wp-content/uploads/2022/03/empanadas-vigilia-receta.jpg" alt=""
-   >
+   <div class="comida1">
+    <div class="comida2">
+      <img class="muzza" src="../imgs/napolitana.png"
+      width="40%">  
+      <p>Napolitana</p>
+      <p>$3000</p>
+      <button>al carrito</button>
+    </div>
+   </div>  
 
-</div> 
-  <br><br> <br>
-  <br>
-  
-<div class="comida">
-  <img class="emp" src="https://inmendoza.com/wp-content/uploads/2022/05/milanesa-con-morrones-1024x576.jpg" alt=""
-  >
-  <table class="tabe" id="empa">
- 
-     <th id="n">Milanesas</th>
-    <tr>
-     
-     <td>Napolitana</td>
-     
-     <td>$2000</td>
-    </tr>
-    <tr>
-      <td>De carne con papas</td>
-      <td>$2500</td>
-    </tr> 
-    <tr>
-       <td>De Pollo con papas </td>
-       <td>2700</td>
-    </tr>
-    <tr>
-         <td> De berenjena con papas</td>
-         <td>$3000</td>
-    </tr>
-   </table>
+   <div class="comida1">
+    <div class="comida2">
+      <img class="muzza" src="../imgs/4esta.png"
+      width="40%">  
+      <p>Cuatro Estaciones</p>
+      <p>$3000</p>
+      <button>al carrito</button>
+    </div>
+   </div>  
+
+   <div class="comida1">
+    <div class="comida2">
+      <img class="muzza" src="../imgs/champiñones.png"
+      width="40%">  
+      <p>Champiñones</p>
+      <p>$3000</p>
+      <button>al carrito</button>
+    </div>
+   </div>  
+
+   <div class="comida1">
+    <div class="comida2">
+     <img class="muzza" src="../imgs/champiñones.png"
+>  
+     <p>Champiñones</p>
+     <p>$3000</p>
+     <button>al carrito</button>
+    </div>
+   </div>  
+
 </div>
-<br><br> <br>
-<div class="comida">
-  
-    <table class="tabe" id="empa">
-   
-       <th id="n">Hamburguesa</th>
-      <tr>
-       
-       <td>De pollo</td>
-       
-       <td>$2500</td>
-      </tr>
-      <tr>
-        <td>Clasica con papas y gaseosa</td>
-        <td>$3500</td>
-      </tr> 
-      <tr>
-         <td>Vegana con papas y gaseosa</td>
-         <td>3700</td>
-      </tr>
-      <tr>
-           <td> Hamburguesa BBQ</td>
-           <td>$3000</td>
-      </tr>
-      <tr>
-        <td>Papas extra </td>
-        <td>$1800</td>
-      </tr>
-     
-    </table>
-   
-     <img class="emp" src="https://www.infobae.com/new-resizer/xHORBTTOvi76_TX7OOanBUblR-0=/1200x900/filters:format(webp):quality(85)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/FJKXKQKMMJBV7KQ7XQ3YNFO7LU.jpg" alt=""
-    >
-  
+<br>
+<h1>Empanadas</h1>
+<div class="conteinercomida">
+
+ <div class="comida1">
+
+   <div class="comida2">
+     <img class="muzza" src="../imgs/jamon.png"
+       >  
+     <p>Jamon y Queso</p>
+     <p>$3000</p>
+     <button>al carrito</button></div>
+    </div>
+  </div>
 
 </div> 
- 
-<footer>
-  <div class="slogan">
-    <h4>Red Moon</h4>
-    <p>Cocinando con amor desde 1963.</p>
-  </div>
-  <div class="redes">
-    <h4>Seguinos</h4>
-    <a href=""><i class="fa-brands fa-instagram"></i></a>
-    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-    <a href=""><i class="fa-brands fa-twitter"></i></a>
-  </div>
-  <div class="github">
-    <a href="https://github.com/BrendaRuthHerrera/Carta-menu"><i class="fa-brands fa-github"></i>Equipo 5 - Empujar Coders 2023.</a>
-  </div>
-</footer>
+ <br>
+ <br>
+
 
   <script src="../js/script.js"></script>
    <!-- <footer class="pie-pagina">
@@ -272,5 +174,23 @@
         >
       </div>
     </footer> -->
+    <footer>
+      <div class="slogan">
+        <h4>Red Moon</h4>
+        <p>Cocinando con amor desde 1963.</p>
+      </div>
+      <div class="redes">
+        <h4>Seguinos</h4>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/BrendaRuthHerrera/Carta-menu"><i class="fa-brands fa-github"></i>Equipo 5 - Empujar Coders 2023.</a>
+      </div>
+    </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
 </body>
 </html>
