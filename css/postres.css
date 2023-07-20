@@ -1,6 +1,5 @@
 /* postres    */
-* {
-  font-size: 62.5%; /* 1rem = 10px */
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,108 +15,105 @@
   font-family: 'Pragmatica Extralight';
   src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
 }
-html, body {
-  min-height: 100vh;
-}
 
-body {
-  /* position: relative; */
-  margin: 0;
-  font-family: "Belanosima", sans-serif;
-  background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+body{
+ margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+
 }
 
 main {
-  padding: 100px 0;
+  padding-top: 13rem;
 }
 
-h1 {
+.titulo{
   font-family: 'Attena', sans-serif;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
   color: #842001;
-  
 }
+
+img{
+  max-width: 100%;
+
+}
+
+figure{
+  text-align: center;
+}
+
+header{
+  display: flex;
+  justify-content:space-between;
+}
+
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 150px; /* definir alto de las filas*/
-    padding: 30px; /*margen*/
-    grid-gap: 50px;
-  
+    gap: 20px;
+  padding: 50px;
+  }
+
+  .gallery__item {
+    background-color: black;
+    max-width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+  }
+    
+  .gallery-cajita {
+    background-color:#842001;
+    margin:  10px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+  }
+
+
+  .info-product{
+    padding: 15px 30px;
+    line-height: 1;
+    font-family: 'Attena', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .gallery-cajita img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+  }
+
+  .gallery-cajita figure{
+    overflow: hidden;
+      }
+    
+
+  img:hover{
+    transform: scale(1.2);
+  }
+
+.precio{
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
 }
 
-.gallery__item {
-  position: relative;
-}
-
-.gallery__img {
-  width: 100%; /*ocupa todo el ancho de la columna*/
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10%;
-}
-
-.gallery__img:hover {
-  color: red;
-  opacity: 0.5;
-}
-
-.gallery__title {
-  position: absolute;
-  bottom: 0;
+.info-product button{
+  border: none;
+  background: none;
+  background-color: black;
   color: white;
-  font-family: 'Attena', sans-serif;
-  font-size: 20px;
-  background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px 10px;
+  cursor: pointer;
 }
 
-@media  (min-width:200px) {
-  .gallery-container{
-  grid-template-columns:repeat(1, 1fr);
-  }
-}
 
-@media (min-width:300px) {
-  .gallery-container {
-    grid-template-columns: repeat(2, 1fr );
 
-  }
-}
-  
-@media (min-width:768px) {
-  .gallery-container {
-    grid-template-columns: repeat(3, 1fr );
-  }
-}
-  
-@media (min-width:1024px) {
-    .gallery-container{
-    grid-template-columns:repeat(5, 1fr);
-  }
-}
 
-footer {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-@media (max-width: 900) {
-  main {
-    padding-top: 80px;
-    padding-bottom: 50px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-}
