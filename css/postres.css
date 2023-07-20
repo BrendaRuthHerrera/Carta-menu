@@ -1,4 +1,46 @@
 /* postres    */
+* {
+  font-size: 62.5%; /* 1rem = 10px */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Attena';
+  src: url(../fonts/attena-webfont.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Pragmatica Extralight';
+  src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  /* position: relative; */
+  margin: 0;
+  font-family: "Belanosima", sans-serif;
+  background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  padding: 100px 0;
+}
+
+h1 {
+  font-family: 'Attena', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #842001;
+  
+}
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6,25 +48,25 @@
     padding: 30px; /*margen*/
     grid-gap: 50px;
   
-  }
-  .gallery__item {
-    position: relative;
-  }
-  
-  .gallery__img {
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__img {
   width: 100%; /*ocupa todo el ancho de la columna*/
   height: 100%;
   object-fit: cover;
   border-radius: 10%;
-  
-  }
-  
-  .gallery__img:hover {
+}
+
+.gallery__img:hover {
   color: red;
   opacity: 0.5;
-  }
-  
-  .gallery__title {
+}
+
+.gallery__title {
   position: absolute;
   bottom: 0;
   color: white;
@@ -34,30 +76,47 @@
   margin: 0;
   padding: 10px;
   border-radius: 10px;
+}
+
+@media  (min-width:200px) {
+  .gallery-container{
+  grid-template-columns:repeat(1, 1fr);
   }
-  @media  (min-width:200px) {
-    .gallery-container{
-    grid-template-columns:repeat(1, 1fr);
-    }
-  }
-  
-  @media (min-width:300px) {
+}
+
+@media (min-width:300px) {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr );
-  
+
   }
+}
   
-  }
-  
-  @media (min-width:768px) {
+@media (min-width:768px) {
   .gallery-container {
     grid-template-columns: repeat(3, 1fr );
+  }
+}
   
+@media (min-width:1024px) {
+    .gallery-container{
+    grid-template-columns:repeat(5, 1fr);
   }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 900) {
+  main {
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
-  
-  @media (min-width:1024px) {
-  .gallery-container{
-  grid-template-columns:repeat(5, 1fr);
+
+  h1 {
+    font-size: 20px;
   }
-  }
+}

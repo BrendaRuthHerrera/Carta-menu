@@ -1,3 +1,63 @@
+* {
+  font-size: 62.5%; /* 1rem = 10px */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Attena';
+  src: url(../fonts/attena-webfont.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Pragmatica Extralight';
+  src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
+
+/* navbar */
+
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+
+
+#inicio {
+  align-items: center;
+}
+
+body {
+  /* position: relative; */
+  margin: 0;
+  font-family: "Belanosima", sans-serif;
+  background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-size: 50px;
+  font-family: 'Attena', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(251, 251, 251);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-size: 40px;
+  font-family: 'Attena', sans-serif;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+
 .comida > table {
     color: white;
     background-color: rgba(0, 0, 0, 0.637);
@@ -14,12 +74,13 @@
   
   .pizza {
     border-radius: 50%;
-    max-width: 40%;
+    width: 500px;
     font-size: 30px;
   }
   .emp {
     border-radius: 50%;
-    max-width: 40%;
+    /* max-width: 40%; */
+    width: 500px;
     font-size: 30px;
   }
   #n {
@@ -29,3 +90,10 @@
     margin-left: 10px;
   }
   /*fin de comidas*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
