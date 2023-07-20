@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RedMoon</title>
     <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/newnavfooter.css"/>
+    <link rel="stylesheet" href="css/newnavfooter.css"/>
    <link rel="shortcut icon"
     href="https://github.com/BrendaRuthHerrera/Carta_menu/blob/d94405ec5273ad50925a0bc3e0538508e4e04459/img/WhatsApp%20Image%202023-06-28%20at%209.35.12%20AM.jpeg?raw=true"
     type="image/x-icon"
@@ -18,7 +18,7 @@
 />
   </head>
   <body>
-    <header> 
+    <!-- <header> 
     
     <span class="nav-bar" id="btnmenu">RedMoon <i class="fa-solid fa-bars"></i></i> </span>
     <nav class="main-nav">
@@ -45,29 +45,56 @@
   <br>
   <br>
   <br>
-  <br>
+  <br> -->
+  <header>
+    <div id="logo">
+      <img src="imgs/since 1963.png" alt="logo">
+    </div>
+    
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li><a href="index.html">Inicio</a></li>
+        <li id="btn-submenu">
+          <a href="" class="disabled">Menu</a>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="html/desayuno.html">Desayunos/Meriendas</a></li>
+            <li class="submenu-item"><a href="html/comidas.html">Comidas</a></li>
+            <li class="submenu-item"><a href="html/bebidas.html">Bebidas</a></li>
+            <li class="submenu-item"><a href="html/postres.html">Postres</a></li>
+          </ul>
+        </li>
+        <li><a href="html/info.html">Info</a></li>
+        <li><a href="html/login y registro.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Date un gusto...</h1>
+    <h2>Porque amamos la vida, le ponemos pasión a la comida!</h2>
+    <div class="slider">
+      <div class="list">
+          <div class="image"><img src="imgs/hambur.jpg" alt="hamburguesa"></div>
+          <div class="image"><img src="imgs/mila.jpg" alt="milanesa"></div>
+          <div class="image"><img src="imgs/pizza.jpg" alt="pizza"></div>
+          <div class="image"><img src="imgs/empanadas.jpeg" alt="empanadas"></div>
+      </div>
+      <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <ul class="dots"> <!--1 dot per image-->
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+      </ul>
+    </div>
+  </main>
   
-  <h1>Date un gusto...</h1>
-  <h2>Porque amamos la vida, le ponemos pasión a la comida!</h2>
-  <div class="slider">
-    <div class="list">
-        <div class="image"><img src="imgs/hambur.jpg" alt="hamburguesa"></div>
-        <div class="image"><img src="imgs/mila.jpg" alt="milanesa"></div>
-        <div class="image"><img src="imgs/pizza.jpg" alt="pizza"></div>
-        <div class="image"><img src="imgs/empanadas.jpeg" alt="empanadas"></div>
-    </div>
-    <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
-    </div>
-    <ul class="dots"> <!--1 dot per image-->
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
- <br>
-  <footer class="pie-pagina">
+
+  <!-- <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
           <figure>
@@ -99,8 +126,22 @@
           >&copy;2023 <b>Grupo 5</b> - Todos Los Derechos Reservados.</small
         >
       </div>
+    </footer> -->
+    <footer>
+      <div class="slogan">
+        <h4>Red Moon</h4>
+        <p>Cocinando con amor desde 1963.</p>
+      </div>
+      <div class="redes">
+        <h4>Seguinos</h4>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/BrendaRuthHerrera/Carta-menu"><i class="fa-brands fa-github"></i>Equipo 5 - Empujar Coders 2023.</a>
+      </div>
     </footer>
-
   <script src="js/script.js"></script>
   </body>
 </html>

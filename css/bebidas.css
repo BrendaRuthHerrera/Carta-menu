@@ -1,9 +1,24 @@
-/* Bebidas */
+body {
+  /* position: relative; */
+  margin: 0;
+  font-family: "Belanosima", sans-serif;
+  background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
 .titulo {
     padding-top: 5%;
     text-align: center;
     color: red;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    font-family: 'Attena', sans-serif;
     font-size: 50px;
   }
   
@@ -38,7 +53,13 @@
   .parrafo > p {
     margin-top: 2%;
     color: aliceblue;
-    font-size: 110%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .parrafo :first-child {
+    font-size: 25px;
+    font-family: 'Attena';
   }
   
   .parrafo1 {
@@ -61,6 +82,8 @@
     margin: 2%;
     box-shadow: 10px 10px 10px whitesmoke;
     transition: transform 0.3s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
   .cajaGrande:hover {
@@ -170,4 +193,3 @@
     }
   }
   
-  /*fin de bebidas*/

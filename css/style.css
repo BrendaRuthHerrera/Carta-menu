@@ -1,14 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
-
 * {
+  font-size: 62.5%; /* 1rem = 10px */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Attena';
+  src: url(../fonts/attena-webfont.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Pragmatica Extralight';
+  src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
+
+/* navbar */
+
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+
+
 #inicio {
   align-items: center;
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   margin: 0;
   font-family: "Belanosima", sans-serif;
   background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
@@ -17,16 +34,17 @@ body {
   background-size: cover;
 }
 
-
-
-
-
+main {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
 
 h1 {
   text-align: center;
   color: red;
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   font-size: 50px;
+  font-family: 'Attena', sans-serif;
 }
 
 h2 {
@@ -34,13 +52,16 @@ h2 {
   color: rgb(251, 251, 251);
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   font-size: 40px;
+  font-family: 'Attena', sans-serif;
+  font-weight: 400;
+  padding-bottom: 8px;
 }
 
 
 
 
 /* Bebidas */
-.titulo {
+/* .titulo {
   padding-top: 5%;
   text-align: center;
   color: red;
@@ -209,31 +230,33 @@ h2 {
   .parrafo {
     font-size: 80%;
   }
-}
+} */
 
 /*fin de bebidas*/
+
 /* postres    */
-.gallery-container {
+
+/* .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px; /* definir alto de las filas*/
-  padding: 30px; /*margen*/
+  grid-auto-rows: 150px; definir alto de las filas
+  padding: 30px; margen
   grid-gap: 50px;
 
 }
 .gallery__item {
   position: relative;
-}
+} */
 
-.gallery__img {
-width: 100%; /*ocupa todo el ancho de la columna*/
+/* .gallery__img {
+width: 100%; ocupa todo el ancho de la columna
 height: 100%;
 object-fit: cover;
 border-radius: 10%;
 
-}
+} */
 
-.gallery__img:hover {
+/* .gallery__img:hover {
 color: red;
 opacity: 0.5;
 }
@@ -267,10 +290,7 @@ border-radius: 10px;
   .gallery-container {
     grid-template-columns: repeat(3, 1fr );
   }
-}
-
-
-/*fin de info local */
+} */
 
 
 
@@ -288,6 +308,7 @@ border-radius: 10px;
   margin: auto;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .list {
@@ -360,7 +381,7 @@ border-radius: 10px;
 }
 
 /*inicio nav*/
-.logo {
+/* .logo {
   margin-left: 19px;
   margin-right: 10px;
   padding: 24px;
@@ -447,12 +468,12 @@ header {
     opacity: 1;
     visibility: visible;
   }
-}
+} */
 /* fin del nav*/
 
 /*inicio del footer*/
 
-.pie-pagina {
+/* .pie-pagina {
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
@@ -518,8 +539,8 @@ header {
     grid-gap: 30px;
     padding: 35px 0px;
   }
-}
-/*fin de foter*/
+} */
+/*fin de footer*/
 
 
 
