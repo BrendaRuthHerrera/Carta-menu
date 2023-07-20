@@ -135,6 +135,7 @@ main {
   font-family: 'Attena', sans-serif;
   font-size: 2.4rem;
   color: #842001;
+  text-align: center;
 }
 
 .imp p {
@@ -143,6 +144,7 @@ main {
   color: #22120e;
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -159,6 +161,11 @@ main {
   }
 }
 
+@media (max-width: 780px) {
+  .imp p {
+    text-align: center;
+  }
+} 
 /* slider */
 
 .slider {
