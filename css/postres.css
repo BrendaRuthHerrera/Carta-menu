@@ -5,7 +5,7 @@
     grid-auto-rows: 150px; /* definir alto de las filas*/
     padding: 30px; /*margen*/
     grid-gap: 50px;
-    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
   }
   .gallery__item {
     position: relative;
