@@ -4,6 +4,7 @@
     text-align: center;
     color: red;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    font-family: 'Attena', sans-serif;
     font-size: 50px;
   }
   
@@ -38,7 +39,13 @@
   .parrafo > p {
     margin-top: 2%;
     color: aliceblue;
-    font-size: 110%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .parrafo :first-child {
+    font-size: 25px;
+    font-family: 'Attena';
   }
   
   .parrafo1 {

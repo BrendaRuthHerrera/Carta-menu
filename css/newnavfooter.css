@@ -14,7 +14,7 @@ header {
     left: 0;
     right: 0;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0 , 0.1); */
-    background-color: #22120e;
+    background-color: #842001;
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -121,14 +121,15 @@ header {
     }
 } */ */
 
-
 .nav-items {
-    list-style: none;
+    list-style-type: none;
+
 }
 
 .nav-items li {
     position: relative;
     float: left;
+    list-style: none;
 }
 
 .nav-items li a {
@@ -138,11 +139,12 @@ header {
     color: #e0d0c1;
     text-decoration: none;
     display: block;
+    transition: transform 0.4s;
+
 }
 
 .nav-items li a:hover {
-    color: #842001;
-    font-weight: bold;
+    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -151,7 +153,7 @@ header {
     display: none;
     left: 0;
     width: 28rem;
-    background-color: #22120e;
+    background-color: #842001;
 }
 
 .submenu-item {
@@ -165,12 +167,17 @@ header {
     font-size: 1.5rem;
     text-decoration: none;
     color: #e0d0c1;
+    transition: none;
+    /* -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none; */
 }
 
 .submenu-item a:hover {
-    color: #842001;
     font-weight: bold;
     cursor: pointer;
+    /* transform: disabled; */
 }
 
 #btn-submenu:first-child {
@@ -209,13 +216,14 @@ header label i {
         width: 6rem;
         height: 6rem;   
     }
+    
     header .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #22120e;
+        background-color: #842001;
         display: none;
 
     }
@@ -226,13 +234,21 @@ header label i {
         
     }
 
+    .nav-items li a {
+        transition: none;
+    }
+
     .submenu {
         position: relative;
         width: 100%;
     }
 
     .submenu-item {
-        background-color: #22120e;
+        background-color: #842001;
+    }
+
+    .submenu-item a {
+        transition: none;
     }
 
     #menu-bar:checked ~ .navbar {
@@ -303,6 +319,12 @@ p {
     display: inline-flex;
     color: #e0d0c1;
     text-decoration: none;
+    transition: transform 1s;
+
+}
+
+.redes a:hover {
+    transform: scale(1.5);
 }
 
 .redes i {
@@ -324,6 +346,11 @@ p {
     font-size: 2rem;
     color: #e0d0c1;
     text-decoration: none;
+    transition: transform 3s;
+}
+
+.github a:hover {
+    transform: scale(1.5);
 }
 
 @media (max-width: 600px) {
