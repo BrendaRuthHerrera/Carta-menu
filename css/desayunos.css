@@ -1,3 +1,7 @@
+main {
+  padding-top: 100px;
+}
+
 .container {
     display: grid;
     grid-template-columns:0.2fr 0.6fr 0.5fr; /* crea tres columnas cada una de diferente tamaño */
@@ -36,10 +40,10 @@
   
   .container2 {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* crea dos columnas cada una de diferente tamaño */
+    grid-template-columns: 1fr 1fr; /* crea dos columnas cada una de diferente tamaño */
     gap: 0px; /* Espacio entre columnas*/
     margin: 30px 250px 30px 250px;
-  
+    padding: 0;
     background-color: rgba(253, 0, 0, 0.671);
     margin-bottom: 50px;
     color: white;
@@ -52,14 +56,23 @@
   
   .item1b {
     /* background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     font-size: 20px;
   }
   
   .item2b {
     /*background-color:blue;*/
+    display: flex;
     text-align: center;
+
     font-size: 20px;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
   }
   
   /*fin de desayuno y meriendas*/

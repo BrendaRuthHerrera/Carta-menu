@@ -29,12 +29,13 @@ main{
 }
 
 .caja__trasera{
+    display: flex;
     width: 100%;
     padding: 10px 20px;
-    display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
     background-color: #d1363650;
+    border-radius: 15px;
 }
 
 .caja__trasera div{
@@ -122,6 +123,7 @@ main{
 .formulario__login{
     opacity: 1;
     display: block;
+    /* height: 100%; */
 }
 
 .formulario__register{

@@ -167,11 +167,11 @@ header {
     font-size: 1.5rem;
     text-decoration: none;
     color: #e0d0c1;
-    /* transition: none; */
-    -webkit-transition-property: none;
+    transition: none;
+    /* -webkit-transition-property: none;
     -moz-transition-property: none;
     -o-transition-property: none;
-    transition-property: none;
+    transition-property: none; */
 }
 
 .submenu-item a:hover {
