@@ -6,18 +6,18 @@
     <title>Postres</title>
 
     <script src="https://kit.fontawesome.com/f34f50eac7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/nav-footer.css"/>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/newnavfooter.css"/>
     <link rel="stylesheet" href="../css/postres.css">
 
 </head>
  <body>
-    <header>
+    <!-- <header>
         <span class="nav-bar" id="btnmenu">RedMoon <i class="fa-solid fa-bars"></i></i> </span>
         <nav class="main-nav">
           
           <ul class="menu" id="menu">
-             <li class="logo">RedMoon</li>
+            <img id="logo" src="../imgs/since 1963.png" alt="logo">
             <li class="menu__item"><a href="../index.html" class="menu__link">inicio</a></li>
             <li class="menu__item container-submenu">
               <a href="#" class="menu__link submenu-btn">Menu</a>
@@ -33,8 +33,37 @@
             <li class="menu__item"><a href="info.html" class="menu__link">Info</a></li>
           </ul>
         </nav>
-    </header>
-   
+    </header> -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <header>
+    <div id="logo">
+      <img src="../imgs/since 1963.png" alt="logo">
+    </div>
+    
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li><a href="../index.html">Inicio</a></li>
+        <li id="btn-submenu">
+          <a href="" class="disabled">Menu</a>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="desayuno.html">Desayunos/Meriendas</a></li>
+            <li class="submenu-item"><a href="comidas.html">Comidas</a></li>
+            <li class="submenu-item"><a href="bebidas.html">Bebidas</a></li>
+            <li class="submenu-item"><a href="postres.html">Postres</a></li>
+          </ul>
+        </li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="login y registro.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+      <main>
         <h1>Postres</h1>
         <div class="gallery-container">
           <div class="gallery__item">
@@ -74,11 +103,27 @@
             <h2 class="gallery__title">Torta Mil Hojas</h2>
           </div>
         </div> 
-        
-     <h2>La vida es corta, mejor empieza por el postre.</h2>
+        <h2>La vida es corta, mejor empieza por el postre.</h2>
+      </main> 
+     
 
-   
-    <footer class="pie-pagina">
+     <footer>
+      <div class="slogan">
+        <h4>Red Moon</h4>
+        <p>Cocinando con amor desde 1963.</p>
+      </div>
+      <div class="redes">
+        <h4>Seguinos</h4>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/BrendaRuthHerrera/Carta-menu"><i class="fa-brands fa-github"></i>Equipo 5 - Empujar Coders 2023.</a>
+      </div>
+    </footer>
+
+    <!-- <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
           <figure>
@@ -109,7 +154,7 @@
         <small
           >&copy;2023 <b>Grupo 5</b> - Todos Los Derechos Reservados.</small
         >
-      </div>
+      </div> -->
     </footer>
     <script src="../js/script.js"></script>
   

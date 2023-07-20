@@ -1,63 +1,265 @@
-#ubicacion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    color: white;
-    background: rgba(0, 0, 0, 0.651);
-  }
+* {
+  font-size: 62.5%; /* 1rem = 10px */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Attena';
+  src: url(../fonts/attena-webfont.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Pragmatica Extralight';
+  src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
+
+/* hasta aca para que funcione el navbar */
+
+body {
+  background-color: #e6e1d7;
+  /* background-image: url(https://img.freepik.com/free-photo/dark-wooden-floor_53876-88979.jpg?w=1380&t=st=1689791594~exp=1689792194~hmac=ea7736c45a376624a76769d100392318d0caa7c72cd935e335530ceea4121a90);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+main {
+  padding-top: 13rem;
+  padding-bottom: 8rem;
+}
+
+.titulo {
+  font-family: 'Attena', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #842001;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 90rem;
+  border-radius: 1rem;
+  background-color: #e0d0c1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+}
+
+.texto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.texto h3 {
+  font-family: 'Attena', sans-serif;
+  font-size: 2rem;
+  color: #842001;
+}
+
+.texto p {
+  font-family: 'Pragmatica Extralight', serif;
+  font-size: 1rem;
+  color: #22120e;
+  font-weight: bold;
+
+}
+
+#lorem-ipsum {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.google-map {
+  margin-top: 20px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.google-map iframe {
+  width: 60vw;
+  height: 40%;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+
+@media (min-width: 600px) {
   
-  .texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    color: white;
+  .titulo {
+    font-size: 5rem;
     margin: 0 auto;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.651);
-    border: 5px solid rgba(0, 0, 0, 0.651);
-    border-radius: 5%;
+    padding-bottom: 4rem;
   }
-  
+
+  .inicio {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem auto;
+  }
+  .texto {
+    /* max-width: 100%; */
+    width: 40rem;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 3rem;
+    align-self: self-start;
+  }
+
   .texto h3 {
-    font-size: 44px;
-    margin: 2px;
+    font-size: 3rem;
   }
-  
+
   .texto p {
-    font-size: 30px;
+    font-size: 2rem;
   }
+
+  #lorem-ipsum {
+    display: inline;
+  }
+
   .google-map {
-    margin: 10px auto;
-    width: fit-content;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.651);
-    border-radius: 5%;
+    display: flex;
+    justify-content: center;
   }
-  
   .google-map iframe {
+    width: 400px;
     height: 400px;
-    width: 480px;
-    max-width: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 5%;
+    margin: 0 auto;
   }
+}
+
+.imp {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: #e0d0c1;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
   
+.imp h3 {
+  margin-bottom: 10px;
+  font-family: 'Attena', sans-serif;
+  font-size: 2.4rem;
+  color: #842001;
+  text-align: center;
+}
+
+.imp p {
+  margin: 0;
+  font-family: 'Pragmatica Extralight', serif;
+  color: #22120e;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
   .imp {
-    color: white;
-    background: rgba(0, 0, 0, 0.651);
-    margin: 90px;
     padding: 10px;
-    border: rgba(0, 0, 0, 0.651) solid 5px;
   }
-  
+
   .imp h3 {
-    font-size: 44px;
-    margin: 2px;
+    font-size: 2rem; /* Equivalent to 20px (2 * 10px) */
   }
+
   .imp p {
-    font-size: 30px;
+    font-size: 1.6rem; /* Equivalent to 16px (1.6 * 10px) */
   }
+}
+
+@media (max-width: 780px) {
+  .imp p {
+    text-align: center;
+  }
+} 
+/* slider */
+
+.slider {
+  width: 1300px;
+  max-width: 80%;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+
+.list img {
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button { 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: black;
+  border: none;
+  font-family: 'Attena', sans-serif;
+  font-weight: bold;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.dots li.active {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+      height: 400px;
+  }
+}

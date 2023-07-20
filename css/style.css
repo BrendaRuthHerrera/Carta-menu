@@ -1,14 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
-
 * {
+  font-size: 62.5%; /* 1rem = 10px */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Attena';
+  src: url(../fonts/attena-webfont.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Pragmatica Extralight';
+  src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
+
+/* navbar */
+
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+
+
 #inicio {
   align-items: center;
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   margin: 0;
   font-family: "Belanosima", sans-serif;
   background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
@@ -17,16 +34,17 @@ body {
   background-size: cover;
 }
 
-
-
-
-
+main {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
 
 h1 {
   text-align: center;
   color: red;
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   font-size: 50px;
+  font-family: 'Attena', sans-serif;
 }
 
 h2 {
@@ -34,12 +52,245 @@ h2 {
   color: rgb(251, 251, 251);
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   font-size: 40px;
+  font-family: 'Attena', sans-serif;
+  font-weight: 400;
+  padding-bottom: 8px;
 }
 
 
 
 
-/*fin de info local */
+/* Bebidas */
+/* .titulo {
+  padding-top: 5%;
+  text-align: center;
+  color: red;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-size: 50px;
+}
+
+.container1{
+  display:inline-table;
+  margin: 30px 50px 30px 50px;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: rgb(36, 43, 40);
+}
+
+.bebida {
+  width: 55%;
+  height: 110%;
+  border-radius: 15%;
+  max-width: 100%;
+  padding-bottom: 5%;
+}
+
+.img2 {
+  float: right;
+  margin-left: 3%;
+}
+
+.parrafo > p {
+  margin-top: 2%;
+  color: aliceblue;
+  font-size: 110%;
+}
+
+.parrafo1 {
+  float: right;
+  margin-right: 2%;
+}
+
+.parrafo2 {
+  float: left;
+  margin-left: 2%;
+}
+
+.cajaGrande {
+  border-radius: 5%;
+  float: left;
+  width: 21%;
+  height: 28%;
+  padding: 2%;
+  overflow: hidden;
+  margin: 2%;
+  box-shadow: 10px 10px 10px whitesmoke;
+  transition: transform 0.3s;
+}
+
+.cajaGrande:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px red;
+}
+
+@media (max-width: 1199px) {
+  .cajaGrande {
+    border-radius: 5%;
+    float: left;
+    width: 29%;
+    height: 32%;
+    overflow: hidden;
+    margin: 1%;
+    box-shadow: 10px 10px 10px whitesmoke;
+    transition: transform 0.3s;
+  }
+
+  .cajaGrande:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px red;
+  }
+
+  .bebida {
+    width: 40%;
+    height: 95%;
+    border-radius: 15%;
+    max-width: 100%;
+  }
+
+  .img2 {
+    float: right;
+    margin-left: 1%;
+  }
+
+  .parrafo {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 999px) {
+  .cajaGrande {
+    border-radius: 5%;
+    float: left;
+    width: 36%;
+    height: 45%;
+    overflow: hidden;
+    margin: 3%;
+    box-shadow: 10px 10px 10px whitesmoke;
+    transition: transform 0.3s;
+    padding: 1.5%;
+  }
+
+  .cajaGrande:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px red;
+  }
+
+  .bebida {
+    width: 50%;
+    height: 95%;
+    border-radius: 15%;
+    max-width: 100%;
+  }
+
+  .img2 {
+    float: right;
+    margin-left: 1%;
+  }
+
+  .parrafo {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 800px) {
+  .cajaGrande {
+    border-radius: 5%;
+    width: 42%;
+    height: 20%;
+    overflow: hidden;
+    margin: 3%;
+    box-shadow: 10px 10px 10px whitesmoke;
+    transition: transform 0.3s;
+  }
+
+  .cajaGrande:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px red;
+  }
+
+  .bebida {
+    width: 55%;
+    height: 95%;
+    border-radius: 15%;
+    max-width: 100%;
+  }
+
+  .img2 {
+    float: right;
+    margin-left: 1%;
+  }
+
+  .parrafo {
+    font-size: 80%;
+  }
+} */
+
+/*fin de bebidas*/
+
+/* postres    */
+
+/* .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px; definir alto de las filas
+  padding: 30px; margen
+  grid-gap: 50px;
+
+}
+.gallery__item {
+  position: relative;
+} */
+
+/* .gallery__img {
+width: 100%; ocupa todo el ancho de la columna
+height: 100%;
+object-fit: cover;
+border-radius: 10%;
+
+} */
+
+/* .gallery__img:hover {
+color: red;
+opacity: 0.5;
+}
+
+.gallery__title {
+position: absolute;
+bottom: 0;
+color: white;
+font-size: 130%;
+background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+width: 100%;
+margin: 0;
+padding: 10px;
+border-radius: 10px;
+}
+@media  (min-width:200px) {
+  .gallery-container{
+  grid-template-columns:repeat(1, 1fr);
+  }
+}
+
+@media (min-width:300px) {
+.gallery-container {
+  grid-template-columns: repeat(2, 1fr );
+
+}
+
+}
+
+@media (min-width:768px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr );
+  }
+} */
 
 
 
@@ -57,6 +308,7 @@ h2 {
   margin: auto;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .list {
@@ -129,7 +381,7 @@ h2 {
 }
 
 /*inicio nav*/
-.logo {
+/* .logo {
   margin-left: 19px;
   margin-right: 10px;
   padding: 24px;
@@ -216,12 +468,12 @@ header {
     opacity: 1;
     visibility: visible;
   }
-}
+} */
 /* fin del nav*/
 
 /*inicio del footer*/
 
-.pie-pagina {
+/* .pie-pagina {
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
@@ -287,8 +539,8 @@ header {
     grid-gap: 30px;
     padding: 35px 0px;
   }
-}
-/*fin de foter*/
+} */
+/*fin de footer*/
 
 
 
