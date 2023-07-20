@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RedMoon - Comidas</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
     <link rel="stylesheet" href="../css/newnavfooter.css">
     <link rel="stylesheet" href="../css/comidas.css"/>
     <link
@@ -21,29 +21,32 @@
   </head>
   <body>
 
-   <header> 
-    
-    <span class="nav-bar" id="btnmenu">RedMoon <i class="fa-solid fa-bars"></i></i> </span>
-    <nav class="main-nav">
+    <header>
+      <div id="logo">
+        <img src="../imgs/since 1963.png" alt="logo">
+      </div>
       
-      <ul class="menu" id="menu">
-        <img id="logo" src="../imgs/since 1963.png" alt="logo">
-        <li class="menu__item"><a href="../index.html" class="menu__link">inicio</a></li>
-        <li class="menu__item container-submenu">
-          <a href="#" class="menu__link submenu-btn">Menu</a>
-          <ul class="submenu">
-            <li class="menu__item"><a href="comidas.html" class="menu__link">Comidas</a></li>
-            <li class="menu__item"><a href="postres.html" class="menu__link">Postres</a></li>
-            <li class="menu__item"><a href="bebidas.html" class="menu__link">Bebidas</a></li>
-            <li class="menu__item"><a href="desayuno.html" class="menu__link">Desayuno/
-              Merienda</a></li> 
-          </ul>
-        </li>
-           
-        <li class="menu__item"><a href="info.html" class="menu__link">Info</a></li>
-      </ul>
-    </nav>
-  </header> 
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li><a href="../index.html">Inicio</a></li>
+          <li id="btn-submenu">
+            <a href="" class="disabled">Menu</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="desayuno.html">Desayunos/Meriendas</a></li>
+              <li class="submenu-item"><a href="comidas.html">Comidas</a></li>
+              <li class="submenu-item"><a href="bebidas.html">Bebidas</a></li>
+              <li class="submenu-item"><a href="postres.html">Postres</a></li>
+            </ul>
+          </li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="login y registro.html">Login</a></li>
+        </ul>
+        <div class="hamburguer-menu"></div>
+      </nav>
+    </header>
  <br>
  <br>
  <br>
@@ -171,5 +174,23 @@
         >
       </div>
     </footer> -->
+    <footer>
+      <div class="slogan">
+        <h4>Red Moon</h4>
+        <p>Cocinando con amor desde 1963.</p>
+      </div>
+      <div class="redes">
+        <h4>Seguinos</h4>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/BrendaRuthHerrera/Carta-menu"><i class="fa-brands fa-github"></i>Equipo 5 - Empujar Coders 2023.</a>
+      </div>
+    </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
 </body>
 </html>

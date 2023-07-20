@@ -3,7 +3,11 @@
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+}
+
+html, body {
+    min-height: 100vh;
 }
 
 body{
@@ -12,12 +16,14 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    /* min-height: 100vh; */
+
 }
 
 main{
     width: 100%;
+    /* height: 100%; */
     padding: 20px;
-    margin: auto;
     margin-top: 100px;
 }
 
@@ -162,3 +168,4 @@ main{
         position: relative;
     }
 }
+
