@@ -56,7 +56,7 @@ header{
   }
 
   .gallery__item {
-    background-color: black;
+    background-color: #e0d0c1;
     max-width: 80%;
     padding: 30px;
     border-radius: 10px;
@@ -109,7 +109,8 @@ header{
   border: none;
   background: none;
   background-color: black;
-  color: white;
+  color:  #e0d0c1;
+  font-family: 'Pragmatica Extralight', serif;
   padding: 15px 10px;
   cursor: pointer;
 }
