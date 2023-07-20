@@ -1,30 +1,87 @@
-.comida > table {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.637);
-    padding: 20px;
-    font-size: 20px;
-    margin: 20px;
-  }
-  
-  .comida {
+
+@font-face {
+  font-family: 'Attena';
+  src: url(../fonts/attena-webfont.woff) format('woff')
+}
+body{
+  margin: 0 auto;
+ padding: 0;
+ box-sizing: border-box;
+ 
+ }
+ main{
+  padding-top: 13rem;
+ }
+
+.conteinercomida{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+
+figure{
+   max-width: 100%;
+} 
+
+img{
+ 
+  text-align: center;
+}
+.comida1{
+  background-color: black;
+    max-width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.comida2{
+  background-color:#842001;
+  margin:  10px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.info-product{
+  padding: 15px 30px;
+  line-height: 1;
+  font-family: 'Attena', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.comida2 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+.comida2 figure{
+  overflow: hidden;
+}
+img:hover{
+  transform: scale(1.2);
+}
+p{
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
+}
+button{
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .conteinercomida {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .pizza {
-    border-radius: 50%;
-    max-width: 40%;
-    font-size: 30px;
-  }
-  .emp {
-    border-radius: 50%;
-    max-width: 40%;
-    font-size: 30px;
-  }
-  #n {
-    color: red;
-    font-size: 30px;
-    text-shadow: rgba(255, 255, 255, 0.507) 1px 2px 3px;
-    margin-left: 10px;
-  }
+}
   /*fin de comidas*/

@@ -13,7 +13,7 @@ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd149
   
   .container1{
     display:flex;
-    flex-direction: column;
+    flex-direction:inherit;
     margin: 30px 50px 30px 50px;
   }
 
@@ -45,6 +45,12 @@ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd149
 
 .container-img img{
     width: 50%;
+}
+
+.container-product h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container-product .price{

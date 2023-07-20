@@ -41,7 +41,7 @@ main {
 
 h1 {
   text-align: center;
-  color: red;
+  color:#e0d0c1;
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   font-size: 50px;
   font-family: 'Attena', sans-serif;
@@ -51,13 +51,21 @@ h2 {
   text-align: center;
   color: #e0d0c1;
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'Attena', sans-serif;
   font-weight: 400;
   padding-bottom: 8px;
 }
 
-
+h3 {
+  text-align: center;
+  color: #e0d0c1;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-size: 40px;
+  font-family: 'Attena', sans-serif;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
 
 
 /* Bebidas */
