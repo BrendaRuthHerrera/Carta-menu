@@ -113,10 +113,14 @@ main {
   .texto p {
     font-size: 2rem;
   }
-
+  .google-map {
+    display: flex;
+    justify-content: center;
+  }
   .google-map iframe {
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
   }
 }
 

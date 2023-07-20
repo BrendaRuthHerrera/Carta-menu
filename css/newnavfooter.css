@@ -43,7 +43,8 @@ header {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.904);    
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+    object-fit: cover;   
 }
 
 /* .menu,
@@ -205,8 +206,8 @@ header label i {
     }
     
     #logo img {
-        width: 4rem;
-        height: 4rem;   
+        width: 6rem;
+        height: 6rem;   
     }
     header .navbar {
         position: absolute;
@@ -294,7 +295,9 @@ p {
     justify-content: center;
 }
 
-
+.redes h4 {
+    padding-right: 20px;
+}
 
 .redes a {
     display: inline-flex;
@@ -323,7 +326,7 @@ p {
     text-decoration: none;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 600px) {
    h4 {
     font-size: 1.5rem;
    } 
@@ -334,5 +337,13 @@ p {
 
    .github a {
     text-align: center;
+   }
+
+   .redes {
+    padding-left: 10px;
+   }
+
+   .redes h4 {
+    padding-right: 0;
    }
 }
