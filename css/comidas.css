@@ -3,37 +3,61 @@
   font-family: 'Attena';
   src: url(../fonts/attena-webfont.woff) format('woff')
 }
+@font-face {
+  font-family: 'Pragmatica Extralight';
+  src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
 body{
   margin: 0 auto;
  padding: 0;
  box-sizing: border-box;
+ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
+ 
+ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
  
  }
  main{
   padding-top: 13rem;
  }
 
+ .titulo{
+  font-family: 'Attena', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #842001;
+  background-color: black;
+  margin: 100px;
+ }
+
+
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 50px;
+
 }
 
 
 figure{
-   max-width: 100%;
+  text-align: center;
+   
 } 
 
 img{
- 
-  text-align: center;
+ max-width: 100%;
+  
 }
 .comida1{
   background-color: black;
     max-width: 80%;
     padding: 30px;
     border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .comida2{
@@ -42,6 +66,7 @@ img{
   max-width: 100%;
   margin: 0 auto;
   border-radius: 10px;
+  padding: 20px;
 }
 .info-product{
   padding: 15px 30px;
@@ -50,6 +75,8 @@ img{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 30px;
+  color: #e0d0c1;
 }
 .comida2 img{
     width: 100%;
@@ -67,13 +94,14 @@ img:hover{
 p{
   font-size: 18px;
   font-weight: 900;
-  color: black;
+  color: rgb(0, 0, 0);
 }
-button{
+.info-product button{
   border: none;
   background: none;
   background-color: black;
-  color: white;
+  color:  #e0d0c1;
+  font-family: 'Pragmatica Extralight', serif;
   padding: 15px 10px;
   cursor: pointer;
 }
@@ -83,5 +111,16 @@ button{
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.up {
+  position: fixed;
+  right: 5px;
+  height: 50px;
+  bottom: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  width: 50px;
+  height: 60px;
 }
   /*fin de comidas*/
