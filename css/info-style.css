@@ -19,7 +19,8 @@
 
 body {
   background-color: #e6e1d7;
-  /* background-image: url(https://img.freepik.com/free-photo/dark-wooden-floor_53876-88979.jpg?w=1380&t=st=1689791594~exp=1689792194~hmac=ea7736c45a376624a76769d100392318d0caa7c72cd935e335530ceea4121a90);
+  background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5);
+  /* background-image: url();
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; */
@@ -32,9 +33,12 @@ main {
 
 .titulo {
   font-family: 'Attena', sans-serif;
+  font-weight: 500;
   font-size: 3rem;
   text-align: center;
-  color: #842001;
+  color: #B12A00;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+
 }
 
 .inicio {
@@ -118,10 +122,12 @@ main {
 
   .texto p {
     font-size: 2rem;
+    /* padding-bottom: 10px; */
   }
 
   #lorem-ipsum {
-    display: inline;
+    display: block;
+    padding-top: 10px;
   }
 
   .google-map {
