@@ -163,7 +163,7 @@ header {
 }
 
 .submenu-item a {
-    font-family: 'Attena';
+    font-family: 'Attena', sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     transition: none !important;
