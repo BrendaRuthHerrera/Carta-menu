@@ -43,9 +43,10 @@ body{
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 130px;
+  gap: 20px;
   padding: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -67,6 +68,8 @@ img{
   margin-left: 0px;
   margin-right: 0px;
   text-align: center;
+  /* align-self: center; */
+  justify-self: center;
 }
 
 .comida2{
@@ -134,4 +137,7 @@ p{
   height: 60px;
 }
 
+footer p {
+  color: #e0d0c1;
+}
   /*fin de comidas*/
