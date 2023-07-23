@@ -28,8 +28,11 @@ body{
   font-size: 5rem;
   text-align: center;
   color: #842001;
-  background-color: black;
-  margin: 100px;
+  background-color: #e0d0c1;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
  }
 
 
@@ -38,7 +41,7 @@ body{
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 50px;
-
+  justify-content: center;
 }
 
 
@@ -53,11 +56,13 @@ img{
 }
 .comida1{
   background-color:  #e0d0c1;
-    max-width: 80%;
-    padding: 30px;
-    border-radius: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+  max-width: 80%;
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
 }
 
 .comida2{
@@ -123,4 +128,5 @@ p{
   width: 50px;
   height: 60px;
 }
+
   /*fin de comidas*/
