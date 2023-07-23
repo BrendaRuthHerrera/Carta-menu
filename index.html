@@ -14,8 +14,9 @@
   <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
   <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+ 
+ <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
     <!-- <header> 
@@ -71,9 +72,40 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Date un gusto...</h1>
-    <h3>Porque amamos la vida, le ponemos pasión a la comida!</h3>
+
+<!-- Carrusel -->
+<div class="carrusel">
+  <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+    <div class="gallery-cell" >
+      <img src="imgs/mila.jpg" alt="">
+     </div>
+     <div class="gallery-cell">
+        <img src="imgs/empanadas.jpeg" alt="">
+     </div>
+     <div class="gallery-cell">
+        <img src="imgs/hambur.jpg" alt="">
+      </div>
+      <div class="gallery-cell">
+        <img src="imgs/pizza.jpg" alt="">
+      </div>
+  </div>
+   <div class="info">
+       <h2 class="tituloh2">Comidas exquisitas para el paladar </h2>
+       <p>Porque amamos la vida, le ponemos pasión a la comida!</p>
+       
+    </div>
+</div>
+<!--
+<div class="flip-box">
+  <div class="nosotros">
+    <h2 class="flip-box-front">RED MOON</h2>
+    <p class="flip-box-back">Somos RED MOON, uno de los mejores restaurantes de la zona. Cada año nos visitan celebridades nacionales e internacionales a degustar nuestros exquisitos platos. si quieres saber mas de nosotros <a href="./html/info.html">haz click aqui</a> </p>
+  </div>
+</div>
+
+
+   <main>
+
     <div class="slider">
       <div class="list">
           <div class="image"><img src="imgs/hambur.jpg" alt="hamburguesa"></div>
@@ -85,7 +117,7 @@
           <button id="prev"><</button>
           <button id="next">></button>
       </div>
-      <ul class="dots"> <!--1 dot per image-->
+      <ul class="dots"> 1 dot per image
           <li class="active"></li>
           <li></li>
           <li></li>
@@ -94,7 +126,7 @@
   </main>
   
 
-  <!-- <footer class="pie-pagina">
+  <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
           <figure>
@@ -142,6 +174,7 @@
         <a href="https://github.com/BrendaRuthHerrera/Carta-menu"><i class="fa-brands fa-github"></i>Equipo 5 - Empujar Coders 2023.</a>
       </div>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/script.js"></script>
   </body>
 </html>
