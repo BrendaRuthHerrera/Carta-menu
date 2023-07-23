@@ -43,7 +43,7 @@ body{
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 130px;
   padding: 50px;
   justify-content: center;
 }
@@ -61,7 +61,7 @@ img{
 .comida1{
   background-color:  #e0d0c1;
   max-width: 80%;
-  width: 400px;
+  width: 270px;
   padding: 30px;
   border-radius: 10px;
   margin-left: 0px;
@@ -75,7 +75,7 @@ img{
   max-width: 100%;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px;
+  padding: -1px;
 }
 .info-product{
   padding: 15px 30px;
@@ -93,6 +93,7 @@ img{
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
+    
 }
 .comida2 figure{
   overflow: hidden;
