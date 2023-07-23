@@ -53,9 +53,11 @@ main{
 .caja__trasera div p,
 .caja__trasera div button{
     margin-top: 30px;
+    font-family: 'Pragmatica Extralight', serif;
 }
 
 .caja__trasera div h3{
+    font-family: 'Attena', sans-serif;
     font-weight: 400;
     font-size: 26px;
 }
@@ -77,6 +79,10 @@ main{
     color: rgb(110, 31, 31);
 }
 
+.caja__trasera p {
+    font-family: 'Pragmatica Extralight', serif;
+    font-size: 20px;
+}
 /*formulario*/
 .contenedor__login-register{
     display: flex;
@@ -99,6 +105,8 @@ main{
 }
 
 .contenedor__login-register form h2{
+    font-family: 'Attena', sans-serif;
+    font-weight: 500;
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
@@ -135,6 +143,7 @@ main{
 .formulario__register{
     display: none;
 }
+
 
 /*Trabajando en el responsive Design*/
 
