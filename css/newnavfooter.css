@@ -133,19 +133,36 @@ header {
 }
 
 .nav-items li a {
-    font-family: 'Attena';
+    font-family: 'Attena', sans-serif;
     font-size: 2rem;
     padding: 2rem;
     color: #e0d0c1;
     text-decoration: none;
     display: block;
     transition: transform 0.4s;
-
+    cursor: pointer;
 }
 
 .nav-items li a:hover {
     transform: scale(1.5);
-    cursor: pointer;
+}
+
+.nav-items #login {
+    background-color: #e0d0c1;
+    color: #842001;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    /* transition: none; */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.4s; /* Add box-shadow to the transition */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-items #login:hover {
+    transform: scale(1.5);
+    color: black;
+    box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .submenu {
@@ -162,8 +179,9 @@ header {
     border-top: 1px solid rgba(0, 0, 0, 0.1); 
 }
 
+
 .submenu-item a {
-    font-family: 'Attena';
+    font-family: 'Attena', sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     transition: none !important;
@@ -229,8 +247,14 @@ header label i {
         
     }
 
+
     .nav-items li a {
         transition: none;
+    }
+
+    .nav-items li a:hover {
+        color: #e0d0c1;
+        transform: none;
     }
 
     .submenu {
@@ -254,7 +278,15 @@ header label i {
         pointer-events: none;
     }
 
-
+    .nav-items #login {
+        background-color: #842001;
+        color: #e0d0c1;
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: 0px;
+        padding: 2rem;
+        margin-left: 0;
+    }
 }
 
 /* fin navbar */
