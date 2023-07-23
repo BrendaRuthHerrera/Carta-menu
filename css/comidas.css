@@ -28,17 +28,25 @@ body{
   font-size: 5rem;
   text-align: center;
   color: #842001;
-  background-color: black;
-  margin: 100px;
+  background-color: #e0d0c1;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
  }
 
-
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 30px;
+  }
+}
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 50px;
-
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -52,21 +60,24 @@ img{
   
 }
 .comida1{
-  background-color: black;
-    max-width: 80%;
-    padding: 30px;
-    border-radius: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+  background-color:  #e0d0c1;
+  max-width: 80%;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* align-self: center; */
+  justify-self: center;
 }
 
 .comida2{
   background-color:#842001;
-  margin:  10px;
+  margin:  0px;
   max-width: 100%;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px;
+  padding: -1px;
 }
 .info-product{
   padding: 15px 30px;
@@ -84,6 +95,7 @@ img{
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
+    
 }
 .comida2 figure{
   overflow: hidden;
@@ -122,5 +134,9 @@ p{
   font-size: 50px;
   width: 50px;
   height: 60px;
+}
+
+footer p {
+  color: #e0d0c1;
 }
   /*fin de comidas*/

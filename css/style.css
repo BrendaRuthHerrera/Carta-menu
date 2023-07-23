@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
 * {
   font-size: 62.5%; /* 1rem = 10px */
   margin: 0;
@@ -308,7 +311,7 @@ border-radius: 10px;
 
 
 
-/*slider*/
+/*slider
 
 .slider {
   width: 1300px;
@@ -552,6 +555,120 @@ header {
 /*fin de footer*/
 
 
+/*info carrusel*/
+
+.carrusel {
+  position: relative;
+  height: 100%;
+  top: 20px;
+}
+.carrusel .info{
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  text-align: center;
+  
+}
+.carrusel .info .tituloh2{
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script';
+  color: rgb(255, 255, 255);
+}
+
+.carrusel .info p{
+  font-size: 26px;
+  text-shadow: #000000 5px 9px 5px;
+  font-family: "attena";
+}
+
+.tituloh2{
+  text-shadow: #000000 5px 9px 5px;
+}
+
+.carrusel .info button{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+  border:none;
+  background-color: #ff8f46;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+
+}
+
+.carrusel .gallery-cell img{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+}
+
+.nosotros{
+   background-color: #842001;
+}
+
+
+/*info redmoon*/
+.flip-box {
+  background-color: transparent;
+  width: 550px;
+  height: 380px;
+  position: relative;
+  perspective: 1000px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  margin-left: 170px;
+  margin-right: 170px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 30px;
+}
+.nosotros {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease 0s;
+  border-radius: 40px;
+}
+
+.flip-box:hover .nosotros {
+  transform: rotateY(180deg);
+}
+
+.flip-box-back {
+  background-color: rgb(224, 208, 193);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  font-size: 40px;
+  font-family: "Attena";
+  padding: 40px;
+  border-radius: 2%;
+ 
+}
+
+.flip-box-front {
+    background-color: rgb(224, 208, 193);
+    color: rgb(132, 32, 1);
+    padding-top: 110px;
+    font-size: 90px;
+    text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+    border-radius: 40px;
+
+}
 
 
 

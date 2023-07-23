@@ -23,6 +23,11 @@ box-sizing: border-box;
 
 }
 
+h2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 main {
   padding-top: 13rem;
 }
