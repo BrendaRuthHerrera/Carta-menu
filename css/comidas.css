@@ -43,9 +43,10 @@ body{
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 130px;
-  padding: 50px;
+  gap: 90px;
+  padding: 90px;
   justify-content: center;
+  margin-left: 25px;
 }
 
 
@@ -61,8 +62,8 @@ img{
 .comida1{
   background-color:  #e0d0c1;
   max-width: 80%;
-  width: 270px;
-  padding: 30px;
+  width: 300px;
+  padding: 20px;
   border-radius: 10px;
   margin-left: 0px;
   margin-right: 0px;
@@ -71,7 +72,7 @@ img{
 
 .comida2{
   background-color:#842001;
-  margin:  10px;
+  margin:  0px;
   max-width: 100%;
   margin: 0 auto;
   border-radius: 10px;
