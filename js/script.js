@@ -74,3 +74,7 @@ dots.forEach((li, key) => {
     reloadSlider();
   });
 });
+
+
+
+
