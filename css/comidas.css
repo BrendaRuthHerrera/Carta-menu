@@ -43,17 +43,10 @@ body{
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-<<<<<<< HEAD
   gap: 20px;
   padding: 50px;
   justify-content: center;
   align-items: center;
-=======
-  gap: 90px;
-  padding: 90px;
-  justify-content: center;
-  margin-left: 25px;
->>>>>>> 84a33d3d19c38788f23ae7fa21db44476b3a1973
 }
 
 
@@ -72,8 +65,7 @@ img{
   width: 300px;
   padding: 20px;
   border-radius: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-bottom: 20px;
   text-align: center;
   /* align-self: center; */
   justify-self: center;
