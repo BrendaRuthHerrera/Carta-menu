@@ -36,7 +36,7 @@ main {
 
 img{
   max-width: 100%;
-max-height: 100%;
+min-height: 100%;
 }
 
 figure{
@@ -52,20 +52,20 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  padding: 50px;
+  padding: 5%;
   
   }
 
   .gallery__item {
     background-color: #e0d0c1;
     max-width: 80%;
-    padding: 30px;
+    padding: 5%;
     border-radius: 10px;
   }
     
   .gallery-cajita {
     background-color:#842001;
-    margin:  10px;
+    margin:  3%;
     max-width: 100%;
     margin: 0 auto;
     border-radius: 10px;
@@ -74,12 +74,12 @@ header{
 
 
   .info-product{
-    padding: 15px 30px;
+    padding: 5% 5%;
     line-height: 1;
     font-family: 'Attena', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 3%;
   }
 
 
