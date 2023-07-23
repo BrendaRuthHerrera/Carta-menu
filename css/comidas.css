@@ -35,7 +35,11 @@ body{
   width: fit-content;
  }
 
-
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 30px;
+  }
+}
 .conteinercomida{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
