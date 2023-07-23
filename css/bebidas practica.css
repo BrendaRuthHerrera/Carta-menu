@@ -3,17 +3,31 @@ body{
 background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd1491d936148cf/200000002-9906b9a028/photo-1510148199876-8a856ee41d42-2.jpeg?ph=6a757177d5) ;
 }
 
+
+@font-face {
+    font-family: 'Attena';
+    src: url(../fonts/attena-webfont.woff) format('woff')
+  }
+  
+  @font-face {
+    font-family: 'Pragmatica Extralight';
+    src: url(../fonts/Pragmatica-ExtraLight.woff) format('woff');
+}
+
+
 .titulo {
     padding-top: 5%;
     text-align: center;
-    color: red;
+    color: #e0d0c1;
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
     font-size: 50px;
+    font-family: 'Attena', sans-serif;
   }
   
   .container1{
     display:flex;
-    flex-direction:inherit;
+    flex-direction: row;
+    justify-content: center;
     margin: 30px 50px 30px 50px;
   }
 
@@ -37,6 +51,11 @@ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd149
     box-shadow: 0 0 2rem rgb(0, 0, 0, 0.1);
     color: black;
     text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-img{
@@ -48,9 +67,10 @@ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd149
 }
 
 .container-product h3{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Attena', sans-serif; 
+    color: #842001;
 }
 
 .container-product .price{
@@ -58,5 +78,22 @@ background-image: url(https://6a757177d5.cbaul-cdnwnd.com/82fa68df3854b577ccd149
     align-self: center;
     font-size: 1.7rem;
     font-weight: 600;
+    font-family: 'Pragmatica Extralight', serif;
     color: rgb(59, 45, 41);
+}
+
+@media (max-width: 600px) {
+    .cajaPadre {
+        padding-top: 80px;
+    }
+    
+    .container1 {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .container-product {
+        width: 100%;
+    }
+   
 }
