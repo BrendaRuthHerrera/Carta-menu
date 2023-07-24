@@ -7,6 +7,7 @@
     <title>RedMoon</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/newnavfooter.css"/>
+    <link rel="stylesheet" href="css/carrito.css">
    <link rel="shortcut icon"
     href="https://github.com/BrendaRuthHerrera/Carta_menu/blob/d94405ec5273ad50925a0bc3e0538508e4e04459/img/WhatsApp%20Image%202023-06-28%20at%209.35.12%20AM.jpeg?raw=true"
     type="image/x-icon"
@@ -49,7 +50,7 @@
   <br> -->
   <header>
     <div id="logo">
-      <img src="imgs/since 1963.png" alt="logo">
+      <a href="index.html"><img src="imgs/since 1963.png" alt="logo"></a>
     </div>
     
     <input type="checkbox" id="menu-bar">
@@ -57,6 +58,35 @@
 
     <nav class="navbar">
       <ul class="nav-items">
+      <li class="btn-submenu">
+        <div class="container-icon">
+          <div class="container-cart-icon">
+           <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <div class="count-products">
+              <span id="contador-productos">0</span>
+            </div>
+          </div>
+  
+          <div class="container-cart-products hidden-cart">
+            <div class="row-product">
+              <div class="cart-product">
+                <div class="info-cart-product">
+                  <span class="cantidad-producto-carrito">1</span>
+                  <p class="titulo-producto-carrito">--</p>
+                  <span class="precio-producto-carrito">--</span>
+                </div>
+                 <a href="#"><img src="C:\Users\OPC\Documents\mis trabajos bootcamp\Carta-menu-new\imgs\carrito\xmark-solid.svg" class="icon-close"></a>
+              </div>
+            </div>
+  
+            <div class="cart-total hidden">
+              <h3>Total:</h3>
+              <span class="total-pagar">--</span>
+            </div>
+            <p class="cart-empty"></p>
+          </div>
+        </div>
+
         <li><a href="index.html">Inicio</a></li>
         <li id="btn-submenu">
           <a href="" class="disabled">Menu</a>
@@ -70,6 +100,7 @@
         <li><a href="html/info.html">Info</a></li>
         <li><a href="html/login y registro.html" id="login">Login</a></li>
       </ul>
+      <div class="hamburguer-menu"></div>
     </nav>
   </header>
 
