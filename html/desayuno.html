@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RedMoon - Desayuno/merienda</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/newnavfooter.css"/>
-    <link rel="stylesheet" href="../css/postres.css">
+    <link rel="stylesheet" href="../css/desayunos.css">
+    <link rel="stylesheet" href="../css/carrito.css">
     <link
       rel="shortcut icon"
       href="https://github.com/BrendaRuthHerrera/Carta_menu/blob/d94405ec5273ad50925a0bc3e0538508e4e04459/img/WhatsApp%20Image%202023-06-28%20at%209.35.12%20AM.jpeg?raw=true"
@@ -56,6 +57,35 @@
 
       <nav class="navbar">
         <ul class="nav-items">
+        <li class="btn-submenu">
+          <div class="container-icon">
+            <div class="container-cart-icon">
+             <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <div class="count-products">
+                <span id="contador-productos">0</span>
+              </div>
+            </div>
+    
+            <div class="container-cart-products hidden-cart">
+              <div class="row-product">
+                <div class="cart-product">
+                  <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">1</span>
+                    <p class="titulo-producto-carrito">--</p>
+                    <span class="precio-producto-carrito">--</span>
+                  </div>
+                   <a href="#"><img src="C:\Users\OPC\Documents\mis trabajos bootcamp\Carta-menu-new\imgs\carrito\xmark-solid.svg" class="icon-close"></a>
+                </div>
+              </div>
+    
+              <div class="cart-total hidden">
+                <h3>Total:</h3>
+                <span class="total-pagar">--</span>
+              </div>
+              <p class="cart-empty"></p>
+            </div>
+          </div>
+
           <li><a href="../index.html">Inicio</a></li>
           <li id="btn-submenu">
             <a href="" class="disabled">Menu</a>
@@ -69,11 +99,16 @@
           <li><a href="info.html">Info</a></li>
           <li><a href="login y registro.html" id="login">Login</a></li>
         </ul>
+        <div class="hamburguer-menu"></div>
       </nav>
     </header>
-    <br>
-    <br>
-    <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   
 
 <main>
   <h1>Desayunos y Meriendas
@@ -87,8 +122,8 @@
          </figure>
           <div class="info-product">
             <h2>Café con crema</h2>
-            <p class="precio">$600</p>
-             <button>Añadir al carrito</button>
+            <p class="price">$600</p>
+             <button class="btn-add-cart">Añadir al carrito</button>
           </div>
          </div>
       </div>
@@ -100,8 +135,8 @@
      </figure>
      <div class="info-product">
       <h2>Café Americano</h2>
-      <p class="precio">$400</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$400</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -113,8 +148,8 @@
      </figure>
      <div class="info-product">
       <h2>Cappuccino Italiano</h2>
-      <p class="precio">$600</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$600</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -122,12 +157,12 @@
    <div class="gallery__item">
      <div class="gallery-cajita">
      <figure>
-       <img src="https://www.65ymas.com/uploads/s1/12/54/34/4/bigstock-hot-coffee-latte-with-latte-ar-470022933_1_621x621.jpeg" alt="" class="gallery__img">
+       <img src="https://www.coffeecorner.es/wp-content/uploads/2019/10/LATTE.jpg" alt="cafe" class="gallery__img">
      </figure>
      <div class="info-product">
       <h2>Café doble con leche</h2>
-      <p class="precio">$450</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$450</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -140,8 +175,8 @@
      </figure>
      <div class="info-product">
       <h2>Chocolate caliente o frio</h2>
-      <p class="precio">$500</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$500</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -154,8 +189,8 @@
      </figure>
      <div class="info-product">
       <h2>Jugo de Naranja o limonada</h2>
-      <p class="precio">$450</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$450</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -168,8 +203,8 @@
      </figure>
      <div class="info-product">
       <h2>Té Negro</h2>
-      <p class="precio">$350</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$350</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -182,8 +217,8 @@
      </figure>
      <div class="info-product">
       <h2>Té Verde</h2>
-      <p class="precio">$350</p>
-      <button>Añadir al carrito</button>
+      <p class="price">$350</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
    </div>
  </div>
    </div>
@@ -270,5 +305,6 @@
         </div>
       </footer>
     <script src="../js/script.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

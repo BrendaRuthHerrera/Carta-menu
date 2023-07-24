@@ -22,7 +22,7 @@ padding: 0;
 box-sizing: border-box;
 
 }
- sta
+
 h2{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -85,6 +85,8 @@ header{
     display: flex;
     flex-direction: column;
     gap: 3%;
+    font-size: 20px;
+    color: #e0d0c1;
   }
 
 
@@ -121,6 +123,11 @@ header{
   cursor: pointer;
 }
 
+p{
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  }
 
 @media  (min-width:200px) {
   .gallery-container{

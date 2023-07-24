@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -22,6 +21,11 @@ padding: 0;
 box-sizing: border-box;
 
 }
+ sta
+h2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 main {
   padding-top: 13rem;
@@ -36,7 +40,7 @@ main {
 
 img{
   max-width: 100%;
-
+min-height: 100%;
 }
 
 figure{
@@ -52,39 +56,42 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  padding: 50px;
+  padding: 5%;
+  
   }
 
   .gallery__item {
     background-color: #e0d0c1;
     max-width: 80%;
-    padding: 30px;
+    padding: 5%;
     border-radius: 10px;
   }
     
   .gallery-cajita {
     background-color:#842001;
-    margin:  10px;
+    margin:  3%;
     max-width: 100%;
     margin: 0 auto;
     border-radius: 10px;
-    
+    display: grid;
   }
 
 
   .info-product{
-    padding: 15px 30px;
+    padding: 5% 5%;
     line-height: 1;
     font-family: 'Attena', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 3%;
+    font-size: 20px;
+    color: #e0d0c1;
   }
 
 
   .gallery-cajita img{
-    width: 100%;
-    height: 300px;
+    width: auto;
+    height: auto;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
@@ -115,43 +122,36 @@ header{
   cursor: pointer;
 }
 
-  
-  .container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* crea dos columnas cada una de diferente tamaño */
-    gap: 0px; /* Espacio entre columnas*/
-    margin: 30px 250px 30px 250px;
-    padding: 0;
-    background-color: rgba(253, 0, 0, 0.671);
-    margin-bottom: 50px;
-    color: white;
+p{
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
   }
-  
-  .container2 h2 {
-    padding-left: 20px;
-    font-size: 20px;
-  }
-  
-  .item1b {
-    /* background-color: red;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-  }
-  
-  .item2b {
-    /*background-color:blue;*/
-    display: flex;
-    text-align: center;
 
-    font-size: 20px;
-    /* align-content: center; */
-    align-items: center;
-    justify-content: center;
+@media  (min-width:200px) {
+  .gallery-container{
+  grid-template-columns:repeat(1, 1fr);
   }
-  
-  /*fin de desayuno y meriendas*/
-  
+}
+
+@media (min-width:300px) {
+.gallery-container {
+  grid-template-columns: repeat(2, 1fr );
+
+}
+
+}
+
+@media (min-width:768px) {
+.gallery-container {
+  grid-template-columns: repeat(3, 1fr );
+
+}
+}
+
+@media (min-width:1024px) {
+.gallery-container{
+grid-template-columns:repeat(3, 1fr);
+}
+}
+

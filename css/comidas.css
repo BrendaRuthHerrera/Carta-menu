@@ -86,7 +86,7 @@ img{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 30px;
+  font-size: 20px;
   color: #e0d0c1;
 }
 .gallery-cajita img{
