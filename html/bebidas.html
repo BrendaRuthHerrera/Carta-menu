@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/newnavfooter.css"/>
     <link rel="stylesheet" href="../css/bebidas.css"/>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
     <link
       rel="shortcut icon"
       href="https://github.com/BrendaRuthHerrera/Carta_menu/blob/d94405ec5273ad50925a0bc3e0538508e4e04459/img/WhatsApp%20Image%202023-06-28%20at%209.35.12%20AM.jpeg?raw=true"
@@ -51,7 +52,7 @@
      <br> 
      <header>
       <div id="logo">
-        <img src="../imgs/since 1963.png" alt="logo">
+        <a href="../index.html"><img src="../imgs/since 1963.png" alt="logo"></a>
       </div>
       
       <input type="checkbox" id="menu-bar">
@@ -59,6 +60,35 @@
 
       <nav class="navbar">
         <ul class="nav-items">
+        <li class="btn-submenu">
+          <div class="container-icon">
+            <div class="container-cart-icon">
+             <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <div class="count-products">
+                <span id="contador-productos">0</span>
+              </div>
+            </div>
+    
+            <div class="container-cart-products hidden-cart">
+              <div class="row-product">
+                <div class="cart-product">
+                  <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">1</span>
+                    <p class="titulo-producto-carrito">--</p>
+                    <span class="precio-producto-carrito">--</span>
+                  </div>
+                   <a href="#"><img src="C:\Users\OPC\Documents\mis trabajos bootcamp\Carta-menu-new\imgs\carrito\xmark-solid.svg" class="icon-close"></a>
+                </div>
+              </div>
+    
+              <div class="cart-total hidden">
+                <h3>Total:</h3>
+                <span class="total-pagar">--</span>
+              </div>
+              <p class="cart-empty"></p>
+            </div>
+          </div>
+
           <li><a href="../index.html">Inicio</a></li>
           <li id="btn-submenu">
             <a href="" class="disabled">Menu</a>
@@ -75,162 +105,186 @@
         <div class="hamburguer-menu"></div>
       </nav>
     </header>
-    <br>
-    <br>
-    <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
 
   <main> 
           <h1>Bebidas</h1>
 
-          <!--Producto 1-->
-          <div class="contenedor-bebida">
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Agua-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Agua</h2>
-                  <p class="precio">$700</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/AguaconGas-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Agua con Gas</h2>
-                  <p class="precio">$700</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Limonada-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Limonada</h2>
-                  <p class="precio">$1500</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Pomelo-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Pomelada</h2>
-                  <p class="precio">$1500</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Gaseosa-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Gaseosa</h2>
-                  <p class="precio">$800</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Licuados-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Licuados</h2>
-                  <p class="precio">$1600</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Vino-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Vino</h2>
-                  <p class="precio">$2500</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Fernet-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Vaso de Fernet</h2>
-                  <p class="precio">$1600</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Gancia-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Vaso de Gancia</h2>
-                  <p class="precio">$1600</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Quilmes-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Cerveza Quilmes</h2>
-                  <p class="precio">$1800</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/Corona-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Cerveza Corona</h2>
-                  <p class="precio">$1800</p>
-                </div>
-              </div> 
-            </div>
-
-            <div class="card-product">
-              <div class="container-imagen">
-                <figure>
-                  <img src="../imgs/bebidas/StellaArtois-Proyecto.png">
-                </figure>
-                <div class="info-product">
-                  <h2>Cerveza Stella Artois</h2>
-                  <p class="precio">$1800</p>
-                </div>
-              </div> 
-            </div>
-
+          <div class="gallery-container">
+            <div class="gallery__item">
+             <div class="gallery-cajita">
+                 <figure>
+                      <img src="../imgs/bebidas/Agua-Proyecto.png" alt="Producto" class="gallery__img">
+                 </figure>
+                  <div class="info-product">
+                    <h2>Copa Helada</h2>
+                    <p class="price">$1200</p>
+                     <button class="btn-add-cart">Añadir al carrito</button>
+                  </div>
+                 </div>
+              </div>
+          
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/AguaconGas-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Brownies</h2>
+              <p class="price">$800</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Limonada-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Copa Frutal</h2>
+              <p class="price">$1200</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Pomelo-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Panqueques Con Dulce</h2>
+              <p class="price">$800</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Gaseosa-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Torta Charrot</h2>
+              <p class="price">$800</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Licuados-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Lemon Pie</h2>
+              <p class="price">$800</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Vino-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Selva Negra</h2>
+              <p class="price">$850</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Fernet-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Cheesecake</h2>
+              <p class="price">$700</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+ 
+           <div class="gallery__item">
+             <div class="gallery-cajita">
+             <figure>
+               <img src="../imgs/bebidas/Gancia-Proyecto.png" alt="" class="gallery__img">
+             </figure>
+             <div class="info-product">
+              <h2>Torta Mil Hojas</h2>
+              <p class="price">$700</p>
+              <button class="btn-add-cart">Añadir al carrito</button>
+           </div>
+         </div>
+           </div>
+ 
+           <div class="gallery__item">
+            <div class="gallery-cajita">
+            <figure>
+              <img src="../imgs/bebidas/Quilmes-Proyecto.png" alt="" class="gallery__img">
+            </figure>
+            <div class="info-product">
+             <h2>Selva Negra</h2>
+             <p class="price">$850</p>
+             <button class="btn-add-cart">Añadir al carrito</button>
           </div>
-          <!--Fin producto 1-->
+        </div>
+          </div>
 
+
+          <div class="gallery__item">
+            <div class="gallery-cajita">
+            <figure>
+              <img src="../imgs/bebidas/Corona-Proyecto.png" alt="" class="gallery__img">
+            </figure>
+            <div class="info-product">
+             <h2>Cheesecake</h2>
+             <p class="price">$700</p>
+             <button class="btn-add-cart">Añadir al carrito</button>
+          </div>
+        </div>
+          </div>
+
+
+          <div class="gallery__item">
+            <div class="gallery-cajita">
+            <figure>
+              <img src="../imgs/bebidas/StellaArtois-Proyecto.png" alt="" class="gallery__img">
+            </figure>
+            <div class="info-product">
+             <h2>Torta Mil Hojas</h2>
+             <p class="price">$700</p>
+             <button class="btn-add-cart">Añadir al carrito</button>
+          </div>
+        </div>
+          </div>
+ 
+ 
+         </div> 
+          <!--Fin producto 1-->
+          <a href="bebidas.html"> 
+            <div class="up" >⇫</div>
+           </a>
           
         </main>
     <br>
@@ -284,5 +338,6 @@
         </div>
       </footer>
     <script src="../js/script.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

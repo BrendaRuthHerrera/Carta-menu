@@ -53,64 +53,81 @@
      justify-content:space-between;
    }
    
-   .contenedor-bebida {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       gap: 20px;
-     padding: 5%;
-     
-     }
-   
-     .card-product {
-       background-color: #e0d0c1;
-       max-width: 80%;
-       padding: 5%;
-       border-radius: 10px;
-     }
-       
-     .container-imagen {
-       background-color:#842001;
-       margin:  3%;
-       max-width: 100%;
-       margin: 0 auto;
-       border-radius: 10px;
-       display: grid;
-     }
-   
-   
-     .info-product{
-       padding: 5% 5%;
-       line-height: 1;
-       font-family: 'Attena', sans-serif;
-       display: flex;
-       flex-direction: column;
-       gap: 3%;
-     }
-   
-   
-     .container-imagen img{
-       width: auto;
-       height: 150px;
-       object-fit: cover;
-       border-radius: 10px 10px 0 0;
-       transition: all .5s;
-     }
-   
-     .container-imagen figure{
-       overflow: hidden;
-         }
-       
-   
-     img:hover{
-       transform: scale(1.2);
-     }
-   
-   .precio{
-    text-align: center;
-     font-size: 18px;
-     font-weight: 900;
-     color: black;
-   }
+   .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  padding: 5%;
+  
+  }
+
+  .gallery__item {
+    background-color: #e0d0c1;
+    max-width: 80%;
+    padding: 5%;
+    border-radius: 10px;
+  }
+    
+  .gallery-cajita {
+    background-color:#842001;
+    margin:  3%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+  }
+
+
+  .info-product{
+    padding: 5% 5%;
+    line-height: 1;
+    font-family: 'Attena', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    font-size: 20px;
+    color: #e0d0c1;
+  }
+
+
+  .gallery-cajita img{
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+  }
+
+  .gallery-cajita figure{
+    overflow: hidden;
+      }
+    
+
+  img:hover{
+    transform: scale(1.2);
+  }
+
+.precio{
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: black;
+  color:  #e0d0c1;
+  font-family: 'Pragmatica Extralight', serif;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+p{
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  }
    
    @media  (min-width:200px) {
     .contenedor-bebida{
